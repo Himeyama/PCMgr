@@ -118,7 +118,12 @@ namespace PCMgr.Main
         {
             if (Order == 9999)
             {
-                if (showAllDriver) lbDriversCount.Text = LanuageFBuffers.Str_DriverCountLoaded + kmi.ToInt32() + "  " + LanuageFBuffers.Str_DriverCount + BaseDllName.ToInt32();
+                if (showAllDriver)
+#if _X64_
+                    lbDriversCount.Text = LanuageFBuffers.Str_DriverCountLoaded + kmi.ToInt64() + "  " + LanuageFBuffers.Str_DriverCount + BaseDllName.ToInt64();
+#else
+                    lbDriversCount.Text = LanuageFBuffers.Str_DriverCountLoaded + kmi.ToInt32() + "  " + LanuageFBuffers.Str_DriverCount + BaseDllName.ToInt32();
+#endif
                 else
 #if _X64_
                     lbDriversCount.Text = LanuageFBuffers.Str_DriverCount + kmi.ToInt64();

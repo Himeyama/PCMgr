@@ -44,7 +44,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141_xp</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <CLRSupport>false</CLRSupport>
   </PropertyGroup>
@@ -79,8 +79,8 @@
     <OutDir>$(SolutionDir)$(Configuration)_64\</OutDir>
     <TargetName>PCMgr64</TargetName>
     <EnableManagedIncrementalBuild>false</EnableManagedIncrementalBuild>
-    <IncludePath>$(VC_IncludePath);$(WindowsSdk_71A_IncludePath);E:\主数据库\编程\范例\mono-master\msvc\include;</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSdk_71A_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
@@ -116,7 +116,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
       <EntryPointSymbol>main_entry</EntryPointSymbol>
-      <AdditionalLibraryDirectories>$(SolutionDir)$(Configuration)_64\;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Configuration)_64\;$(SolutionDir)ThirdPart\mscoree\x64\;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib\</AdditionalLibraryDirectories>
       <AdditionalDependencies>mscoree.lib;PCMgr64.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ProgramDatabaseFile>$(OutDir)PCMgrLoader.pdb</ProgramDatabaseFile>
       <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
@@ -200,7 +200,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
       <EntryPointSymbol>main_entry</EntryPointSymbol>
-      <AdditionalLibraryDirectories>$(SolutionDir)$(Configuration)_64\;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Configuration)_64\;$(SolutionDir)ThirdPart\mscoree\x64\;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib\</AdditionalLibraryDirectories>
       <AdditionalDependencies>mscoree.lib;PCMgr64.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ProgramDatabaseFile>$(OutDir)PCMgrLoader.pdb</ProgramDatabaseFile>
       <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
