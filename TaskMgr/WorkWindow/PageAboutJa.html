@@ -108,12 +108,6 @@
         </p>
     </div>
     <div class="block">
-        <h3>更新</h3>
-        <p>基本的には、時間があるときに少しずつ更新していく予定です。Windows が使われなくなる日まで続くかもしれません。</p>
-        <p>このソフトウェアにはオンライン更新機能があります。下のボタンで新しい版を確認できます。</p>
-        <p><button id="btn_check_update" onclick="check_update()">更新を確認</button><span id="txt_updates">ボタンを押して更新を確認してください</span></p>
-    </div>
-    <div class="block">
         <h3>報告と要望</h3>
         <p>プロジェクトの <a href="https://github.com/717021/pcmgr" target="_blank">Github リポジトリ</a> から、要望や問題を送れます。</p>
     </div>
@@ -126,49 +120,6 @@
         </p>
         <div class="txt-footer-copyright">Copyright © 2019 All rights reserved <img id="img_platform" class="img-platform" /><button class="btn-ok" onclick="window.external.BtnClose()">閉じる</button></div>
     </div>
-    <script>
-        var update_checked = false;
-        var xhr;
-
-        function check_update() {
-            if (update_checked) {
-                window.external.BtnRunUpdate()
-            } else {
-                xhr = null;
-                if (window.XMLHttpRequest) {
-                    xhr = new XMLHttpRequest();
-                }
-                else if (window.ActiveXObject) {
-                    xhr = new ActiveXObject("Microsoft.XMLHTTP");
-                }
-                if (xhr != null) {
-                    xhr.onreadystatechange = check_update_callback;
-                    xhr.open("GET", "https://www.imyzc.com/softs/pcmgr/?checkupdate=" + document.getElementById('txt_current_ver').innerText, true);
-                    xhr.send(null);
-                }
-                else alert("Your browser does not support XMLHTTP.");
-            }
-        }
-        function check_update_callback() {
-            if (xhr.readyState == 4 && (xhr.status == 0 || xhr.status == 200)) {
-                update_checked = true;
-                var b = xhr.responseText;
-                if (b == "newupdate") {
-                    document.getElementById('txt_updates').innerText = '新しい更新があります。ボタンを押して更新を開始してください';
-                    document.getElementById('btn_check_update').innerText = '今すぐ更新';
-                } else if (b == "latest") {
-                    document.getElementById('txt_updates').innerText = 'すでに最新バージョンです';
-                    document.getElementById('btn_check_update').setAttribute('style', 'display:none');
-                } else {
-                    document.getElementById('txt_updates').innerText = '更新エラー ' + b;
-                    document.getElementById('btn_check_update').setAttribute('style', 'display:none');
-                }
-            } else if (xhr.status >= 400) {
-                document.getElementById('txt_updates').innerText = '更新エラー ' + xhr.status;
-                document.getElementById('btn_check_update').setAttribute('style', 'display:none');
-            }
-        }
-    </script>
 </body>
 
 </html>

@@ -160,3 +160,26 @@ x86 のため 32bit ランタイムで確認する。`Debug\` を AppBase にし
 - 上記 Designer.cs 直書きフォームの中国語識別子名（`复制ToolStripMenuItem` 等の `ToolStripMenuItem`
   フィールド名・メソッド名）は非表示のため未対応のまま。表示上は問題ないが、将来リネームする場合は
   Designer.cs と対応する `.cs` のイベントハンドラー参照を同時に直す必要がある。
+
+## オートアップデート機能の廃止
+
+セキュリティ監査（外部通信の洗い出し）の結果、`PCMgrUpdate/UpdateWorker.cs` の自動更新機構が
+**平文 HTTP** かつ**署名検証なし**（完全性チェックはMD5のみで、そのMD5自体も同じ更新サーバーから
+取得するため攻撃者が経路上で完全に偽装可能）でリモートから zip を取得・展開・実行する設計だった
+ため、機能ごと廃止した。以下を削除・修正済み：
+
+- `PCMgrUpdate/` プロジェクト一式（`PCMgrUpdate.csproj`/`PCMgrUpdate64.csproj` とソース）を削除、
+  `PCMgr.sln` から Project 定義・`ProjectConfigurationPlatforms` エントリを削除。
+- `TaskMgr/WorkWindow/FormAbout.cs` の `BtnRunUpdate()`（`PCMgrUpdate.exe` 起動）を削除。
+- `PageAbout.html` / `PageAboutEn.html` / `PageAboutJa.html` の「更新」ブロック（`btn_check_update`
+  ボタン、`www.imyzc.com` への `XMLHttpRequest` を含む `check_update()` スクリプト一式）を削除。
+  連絡先欄の `www.imyzc.com`（作者ブログリンク）は更新機能と無関係なので残置。
+- `PCMgrCmdRunner/PCMgrCmdRunner.cpp`（**UTF-16LE** ファイル。編集時は `Get-Content -Encoding
+  Unicode` / `[System.IO.File]::WriteAllText(..., [System.Text.Encoding]::Unicode)` でBOM付き
+  UTF-16LEを維持すること。通常のEdit toolでの文字列置換は文字化けの恐れがあるため非推奨）から
+  `fix` コマンド（`MRunCmd_Fix` ハンドラ、登録行、ヘルプテキスト）を削除。これは「修復インストール」
+  機能で、同じ脆弱な更新サーバーから zip を再取得する処理を流用していたため道連れで削除。
+
+`run.ps1`/`run64.ps1`/`Install.md`/`README.md` はもともと `PCMgrUpdate` を参照していなかった
+（このフォークのビルドパイプラインには組み込まれていなかった）ため変更不要。`dotnet build
+TaskMgr/PCMgr32.csproj` でビルド成功済み。

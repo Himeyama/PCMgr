@@ -14,10 +14,6 @@ namespace PCMgr.WorkWindow
         {
             Close();
         }
-        public void BtnRunUpdate()
-        {
-            NativeMethods.MRunExe("PCMgrUpdate.exe","");
-        }
 
         private void FormAbout_Load(object sender, EventArgs e)
         {
