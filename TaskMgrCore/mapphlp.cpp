@@ -1170,10 +1170,14 @@ M_API void MAppMainGetArgsFreeAll() {
 //old init funs
 typedef void(*startfun)();
 
-EXTERN_C BOOL STDMETHODCALLTYPE _CorDllMain(HINSTANCE hInst, DWORD dwReason, LPVOID lpReserved);
-
 int MLoadApp() {
-	return _CorDllMain(hInst, 0, 0);
+	// Legacy .NET 1.x/2.x mixed-mode activation via mscoree.dll's _CorDllMain
+	// shim. Superseded by the ICLRRuntimeHost-based startup path used by the
+	// real app launch (see the CLRCreateInstance/GetRuntime/.../
+	// ExecuteInDefaultAppDomain sequence above); this function is only
+	// reachable through a legacy native-bridge command and is stubbed out
+	// since mscoree.lib (which exports _CorDllMain) is not available.
+	return 0;
 }
 bool MLoadAppBackUp()
 {

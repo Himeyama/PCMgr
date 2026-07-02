@@ -3,7 +3,10 @@
 // stdafx.obj 将包含预编译类型信息
 
 #include "stdafx.h"
-#pragma comment(lib, "mscoree.lib")
+// mscoree.lib (NETFXSDK import lib, not available in this build environment)
+// is intentionally not linked: CLRCreateInstance is only ever called through
+// the dynamically-loaded dCLRCreateInstance function pointer (see
+// mapphlp.cpp), so no static import is actually required.
 #pragma comment(lib, "version.lib")
 #pragma comment(lib, "Uxtheme.lib")
 #pragma comment(lib, "comctl32.lib")
