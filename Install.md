@@ -3,7 +3,7 @@
 ## 動作環境
 
 - Windows 7 以降（推奨: Windows 10/11）
-- .NET Framework 4.5 以降
+- .NET Framework 4.8 以降
 
 ---
 
@@ -15,69 +15,46 @@
 
 1. `Release/Release_x86_1.3.2.6.zip` を任意のフォルダに展開する
 2. `ThirdPart/AeroWizard/AeroWizard32.dll` を展開先フォルダにコピーする
-3. `PCMgr32.exe` を実行する
+3. `PCMgr32.exe` を管理者として実行する
 
 ### x64 版
 
 1. `Release_64/Release_x64_1.3.2.6.zip` を任意のフォルダに展開する
 2. `ThirdPart/AeroWizard/AeroWizard64.dll` を展開先フォルダにコピーする
-3. `PCMgr64.exe` を実行する
+3. `PCMgr64.exe` を管理者として実行する
 
 > capstone.dll は ZIP に同梱済みです。
 
 ---
 
-## 方法 2: ソースからビルドする
+## 方法 2: dotnet CLI でビルドして起動する
+
+C++ ローダー (`PCMgr32.exe`) はビルド済みバイナリを流用し、C# 部分 (`PCMgrApp32.dll`) だけを dotnet CLI でビルドします。
 
 ### 必要なツール
 
-- Visual Studio 2019 以降
-  - C++ によるデスクトップ開発 ワークロード（v141_xp および v142 ツールセット）
-  - .NET デスクトップ開発 ワークロード
-- Windows SDK 10.0
+- [.NET SDK 8.0](https://dotnet.microsoft.com/download)
+- .NET Framework 4.8（Windows 10/11 に標準搭載）
 
-### ビルド手順
+### 手順
 
-1. Visual Studio で `PCMgr.sln` を開く
+```powershell
+# 1. C# 部分をビルド
+dotnet build TaskMgr\PCMgr32.csproj -c Debug /p:Platform=x86 `
+  /p:FrameworkPathOverride="C:\Windows\Microsoft.NET\Framework\v4.0.30319"
 
-2. スタートアッププロジェクトを **PCMgrLoader** に設定する
+# 2. ビルド済み ZIP を Debug\ に展開（初回のみ）
+Expand-Archive Release\Release_x86_1.3.2.6.zip -DestinationPath Debug\ -Force
 
-3. ソリューション構成を選ぶ
-   | 構成 | プラットフォーム | 出力先 |
-   |------|---------|--------|
-   | Debug | x86 (Win32) | `Debug\` |
-   | Debug | x64 | `Debug_64\` |
-   | Release | x86 (Win32) | `Release\` |
-   | Release | x64 | `Release_64\` |
+# 3. サードパーティ DLL をコピー（初回のみ）
+Copy-Item ThirdPart\AeroWizard\AeroWizard32.dll Debug\
+Copy-Item ThirdPart\capstone\lib\x86\capstone.dll Debug\
 
-4. ソリューションエクスプローラーで **PCMgrLoader** を右クリック → **ビルド**
+# 4. 起動（管理者権限推奨）
+Start-Process Debug\PCMgr32.exe -Verb RunAs
+```
 
-5. サードパーティ DLL をコピーする
-
-   **x86 の場合** → 出力先フォルダ (`Debug\` または `Release\`) へコピー:
-   ```
-   ThirdPart\AeroWizard\AeroWizard32.dll
-   ThirdPart\capstone\lib\x86\capstone.dll
-   ```
-
-   **x64 の場合** → 出力先フォルダ (`Debug_64\` または `Release_64\`) へコピー:
-   ```
-   ThirdPart\AeroWizard\AeroWizard64.dll
-   ThirdPart\capstone\lib\x64\capstone.dll
-   ```
-
-6. 出力先フォルダの `PCMgr32.exe`（x86）または `PCMgr64.exe`（x64）を実行する
-
-### ビルド不要なサブプロジェクト
-
-以下のプロジェクトはビルドしなくても動作に影響ありません:
-
-| プロジェクト | 理由 |
-|---|---|
-| `PCMgrKernel` | カーネルドライバ。ビルドには WDK 10 が必要 |
-| `PCMgrNetMon` | 未実装 |
-| `PCMgrRegedit` | 未実装 |
-| `PCMgrUpdate` | 更新サーバーが廃止済みで機能しない |
+2 回目以降は手順 1 のビルドだけで `Debug\PCMgrApp32.dll` が更新されます。
 
 ---
 
