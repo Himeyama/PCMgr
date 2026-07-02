@@ -10,6 +10,8 @@ bin/
 *.lnk
 *.obj
 *.res
+*.lib
+*.sys
 *.log
 *.pch
 *.lastbulidstate

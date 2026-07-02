@@ -1,0 +1,7 @@
+<Project>
+  <!-- Upgrade target framework to v4.8 for dotnet SDK 8 compatibility -->
+  <PropertyGroup>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FrameworkPathOverride>C:\Windows\Microsoft.NET\Framework\v4.0.30319</FrameworkPathOverride>
+  </PropertyGroup>
+</Project>

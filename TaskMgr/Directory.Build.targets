@@ -1,0 +1,33 @@
+<Project>
+  <!--
+    Resources pre-compiled by PowerShell 5.1 (.NET Framework 4.8) into old binary format.
+    Override CoreResGen to swap .resx items for the pre-compiled .resources files.
+  -->
+  <Target Name="CoreResGen" DependsOnTargets="$(CoreResGenDependsOn)">
+    <!-- Remove .resx files so CSC doesn't try to embed them raw -->
+    <ItemGroup>
+      <EmbeddedResource Remove="**\*.resx" />
+    </ItemGroup>
+    <!-- Ensure intermediate output directory exists -->
+    <MakeDir Directories="$(IntermediateOutputPath)" />
+    <!-- Compile .resx → .resources using PowerShell 5.1 (.NET Framework 4.8 with BinaryFormatter) -->
+    <Exec Command="powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File &quot;$(MSBuildProjectDirectory)\PrecompileResources.ps1&quot; &quot;$(MSBuildProjectDirectory)&quot; &quot;$(MSBuildProjectDirectory)\$(IntermediateOutputPath)&quot;" />
+    <!-- Add pre-compiled .resources with explicit LogicalName to avoid path-prefix in manifest name -->
+    <ItemGroup>
+      <_PrecompiledResources Include="$(IntermediateOutputPath)*.resources"
+                             Condition="!$([System.String]::Copy('%(Filename)').Contains('.en.'))" />
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Include="%(_PrecompiledResources.Identity)">
+        <LogicalName>%(_PrecompiledResources.Filename)%(_PrecompiledResources.Extension)</LogicalName>
+        <Type>Non-Resx</Type>
+        <WithCulture>false</WithCulture>
+        <ManifestResourceName>%(_PrecompiledResources.Filename)</ManifestResourceName>
+      </EmbeddedResource>
+    </ItemGroup>
+  </Target>
+
+  <!-- Skip satellite assembly generation: new SDK's AL task is incompatible -->
+  <Target Name="CreateSatelliteAssemblies" />
+  <Target Name="ComputeIntermediateSatelliteAssemblies" />
+</Project>

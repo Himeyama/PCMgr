@@ -133,10 +133,10 @@
     <value>重新启动(&amp;E)</value>
   </data>
   <data name="CancelRun" xml:space="preserve">
-    <value>取消运行</value>
+    <value>中止</value>
   </data>
   <data name="ContinueRun" xml:space="preserve">
-    <value>继续运行</value>
+    <value>続行</value>
   </data>
   <data name="DemandStart" xml:space="preserve">
     <value>手动</value>
@@ -145,7 +145,7 @@
     <value>禁用</value>
   </data>
   <data name="DoNotRemidMeLater" xml:space="preserve">
-    <value>不要再提醒我了</value>
+    <value>次回から非表示</value>
   </data>
   <data name="DriverLoad" xml:space="preserve">
     <value>驱动加载</value>
@@ -404,10 +404,10 @@ PCMgr 需要管理员权限 才能对系统进行控制和管理。
     <value>当前版本的 PCMgr 是 32位的，而您的系统版本是64位的，一些高级功能（比如内核驱动查看）必须使用64位的驱动，所以此版本无法使用这些高级功能。</value>
   </data>
   <data name="X64WarnText" xml:space="preserve">
-    <value>检测到您在64位系统中运行32位的 PCMgr ，这将导致某些功能不可用。您还要继续运行软件吗？</value>
+    <value>32ビット版を64ビット環境で実行中です。一部の機能が利用できません。続行しますか？</value>
   </data>
   <data name="X64WarnTitle" xml:space="preserve">
-    <value>检测到软件版本与系统版本不符</value>
+    <value>ソフトウェアバージョン不一致</value>
   </data>
   <data name="RequestAdminTitle" xml:space="preserve">
     <value>我需要更多权限</value>
@@ -778,7 +778,7 @@ PCMgr 需要管理员权限 才能对系统进行控制和管理。
     <value>注册表路径</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>任务管理器</value>
+    <value>タスクマネージャー</value>
   </data>
   <data name="FileTrustViewCrt" xml:space="preserve">
     <value>&lt;A HREF="#"&gt;查看证书&lt;/A&gt;</value>
