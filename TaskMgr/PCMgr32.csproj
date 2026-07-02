@@ -397,10 +397,16 @@
     <EmbeddedResource Include="Ctls\PerformancePageCpu.en.resx">
       <DependentUpon>PerformancePageCpu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ctls\PerformancePageCpu.ja.resx">
+      <DependentUpon>PerformancePageCpu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ctls\PerformancePageCpu.resx">
       <DependentUpon>PerformancePageCpu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ctls\PerformancePageDisk.en.resx">
+      <DependentUpon>PerformancePageDisk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ctls\PerformancePageDisk.ja.resx">
       <DependentUpon>PerformancePageDisk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ctls\PerformancePageDisk.resx">
@@ -409,16 +415,25 @@
     <EmbeddedResource Include="Ctls\PerformancePageNet.en.resx">
       <DependentUpon>PerformancePageNet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ctls\PerformancePageNet.ja.resx">
+      <DependentUpon>PerformancePageNet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ctls\PerformancePageNet.resx">
       <DependentUpon>PerformancePageNet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ctls\PerformancePageRam.en.resx">
       <DependentUpon>PerformancePageRam.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ctls\PerformancePageRam.ja.resx">
+      <DependentUpon>PerformancePageRam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ctls\PerformancePageRam.resx">
       <DependentUpon>PerformancePageRam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.en.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.ja.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
@@ -435,6 +450,9 @@
     <EmbeddedResource Include="WorkWindow\FormAbout.en.resx">
       <DependentUpon>FormAbout.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\FormAbout.ja.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormAbout.resx">
       <DependentUpon>FormAbout.cs</DependentUpon>
     </EmbeddedResource>
@@ -442,6 +460,9 @@
       <DependentUpon>FormAlwaysOnTop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormDetalsistHeaders.en.resx">
+      <DependentUpon>FormDetalsistHeaders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\FormDetalsistHeaders.ja.resx">
       <DependentUpon>FormDetalsistHeaders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormDetalsistHeaders.resx">
@@ -452,6 +473,9 @@
       <DependentUpon>FormHelp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormSetAffinity.en.resx">
+      <DependentUpon>FormSetAffinity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\FormSetAffinity.ja.resx">
       <DependentUpon>FormSetAffinity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormSetAffinity.resx">
@@ -467,10 +491,16 @@
     <EmbeddedResource Include="WorkWindow\FormVHotKeys.en.resx">
       <DependentUpon>FormVHotKeys.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\FormVHotKeys.ja.resx">
+      <DependentUpon>FormVHotKeys.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormVHotKeys.resx">
       <DependentUpon>FormVHotKeys.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormVTimers.en.resx">
+      <DependentUpon>FormVTimers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\FormVTimers.ja.resx">
       <DependentUpon>FormVTimers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormVTimers.resx">
@@ -482,13 +512,22 @@
     <EmbeddedResource Include="WorkWindow\Tools\FormKDA.en.resx">
       <DependentUpon>FormKDA.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\Tools\FormKDA.ja.resx">
+      <DependentUpon>FormKDA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\Tools\FormKDA.resx">
       <DependentUpon>FormKDA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormDelFileProgress.en.resx">
       <DependentUpon>FormDelFileProgress.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\FormDelFileProgress.ja.resx">
+      <DependentUpon>FormDelFileProgress.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormVPrivileges.en.resx">
+      <DependentUpon>FormVPrivileges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\FormVPrivileges.ja.resx">
       <DependentUpon>FormVPrivileges.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormVPrivileges.resx">
@@ -497,10 +536,16 @@
     <EmbeddedResource Include="WorkWindow\FormVKrnInfo.en.resx">
       <DependentUpon>FormVKrnInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\FormVKrnInfo.ja.resx">
+      <DependentUpon>FormVKrnInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormVKrnInfo.resx">
       <DependentUpon>FormVKrnInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\Tools\FormLoadDriver.en.resx">
+      <DependentUpon>FormLoadDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\Tools\FormLoadDriver.ja.resx">
       <DependentUpon>FormLoadDriver.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\Tools\FormLoadDriver.resx">
@@ -510,6 +555,9 @@
       <DependentUpon>FormSpeedBall.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormVHandles.en.resx">
+      <DependentUpon>FormVHandles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\FormVHandles.ja.resx">
       <DependentUpon>FormVHandles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormVHandles.resx">
@@ -544,6 +592,9 @@
     <EmbeddedResource Include="WorkWindow\FormCheckFileUse.en.resx">
       <DependentUpon>FormCheckFileUse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\FormCheckFileUse.ja.resx">
+      <DependentUpon>FormCheckFileUse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormCheckFileUse.resx">
       <DependentUpon>FormCheckFileUse.cs</DependentUpon>
     </EmbeddedResource>
@@ -553,10 +604,16 @@
     <EmbeddedResource Include="WorkWindow\Tools\FormFileTool.en.resx">
       <DependentUpon>FormFileTool.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\Tools\FormFileTool.ja.resx">
+      <DependentUpon>FormFileTool.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\Tools\FormFileTool.resx">
       <DependentUpon>FormFileTool.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormFillWithData.en.resx">
+      <DependentUpon>FormFillWithData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\FormFillWithData.ja.resx">
       <DependentUpon>FormFillWithData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormFillWithData.resx">
@@ -565,16 +622,25 @@
     <EmbeddedResource Include="WorkWindow\FormMainListHeaders.en.resx">
       <DependentUpon>FormMainListHeaders.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\FormMainListHeaders.ja.resx">
+      <DependentUpon>FormMainListHeaders.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormMainListHeaders.resx">
       <DependentUpon>FormMainListHeaders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormSettings.en.resx">
       <DependentUpon>FormSettings.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\FormSettings.ja.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormSettings.resx">
       <DependentUpon>FormSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormSpyWindow.en.resx">
+      <DependentUpon>FormSpyWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkWindow\FormSpyWindow.ja.resx">
       <DependentUpon>FormSpyWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkWindow\FormSpyWindow.resx">

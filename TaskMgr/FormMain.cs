@@ -550,7 +550,7 @@ namespace PCMgr
 
             //标题
             SetConfig("LastWindowTitle", "AppSetting", Text);
-            Text = GetConfig("Title", "AppSetting", "任务管理器");
+            Text = GetConfig("Title", "AppSetting", "");
             if (Text == "") Text = LanuageFBuffers.Str_AppTitle;
 
             new System.Threading.Thread(mainPagePerf.PerfInitTray).Start();

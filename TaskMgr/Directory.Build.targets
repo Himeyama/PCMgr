@@ -27,7 +27,18 @@
     </ItemGroup>
   </Target>
 
-  <!-- Skip satellite assembly generation: new SDK's AL task is incompatible -->
+  <!-- Skip the SDK's built-in satellite generation: its AL task is incompatible with this project. -->
   <Target Name="CreateSatelliteAssemblies" />
   <Target Name="ComputeIntermediateSatelliteAssemblies" />
+
+  <!--
+    Build culture satellite assemblies (ja, en) ourselves after the main assembly is produced.
+    Framework csc.exe links the pre-compiled culture .resources into <culture>\PCMgrApp32.resources.dll,
+    which the WinForms ComponentResourceManager then loads based on Thread.CurrentUICulture.
+  -->
+  <Target Name="BuildLanguageSatellites" AfterTargets="Build">
+    <!-- Trailing backslashes are stripped so that a &quot;path\&quot; token does not escape its own
+         closing quote and swallow the following argument when cmd.exe forwards it to powershell. -->
+    <Exec Command="powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File &quot;$(MSBuildProjectDirectory)\BuildSatellites.ps1&quot; &quot;$(MSBuildProjectDirectory)&quot; &quot;$(MSBuildProjectDirectory)\$(IntermediateOutputPath.TrimEnd('\'))&quot; &quot;$(TargetDir.TrimEnd('\'))&quot; &quot;$(RootNamespace)&quot; &quot;$(AssemblyName)&quot; &quot;ja,en&quot;" />
+  </Target>
 </Project>
