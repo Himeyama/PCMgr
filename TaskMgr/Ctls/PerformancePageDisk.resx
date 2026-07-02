@@ -162,7 +162,7 @@
     <value>PCMgr.Ctls.PerformanceGrid, PCMgrApp32, Version=1.3.2.6, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
+    <value>Yu Gothic UI, 9pt</value>
   </data>
   <data name="performanceTitle1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>

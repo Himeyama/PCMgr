@@ -838,7 +838,7 @@
     <value>True</value>
   </data>
   <data name="checkBoxAutoLoadDriver.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt, style=Bold</value>
+    <value>Yu Gothic UI, 9pt, style=Bold</value>
   </data>
   <data name="checkBoxAutoLoadDriver.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 152</value>
@@ -1688,7 +1688,7 @@
     <value>3</value>
   </data>
   <data name="tabControl1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
+    <value>Yu Gothic UI, 9pt</value>
   </data>
   <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 12</value>

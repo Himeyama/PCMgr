@@ -1131,7 +1131,7 @@
     <value>8</value>
   </data>
   <data name="tabControlMain.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
+    <value>Yu Gothic UI, 9pt</value>
   </data>
   <data name="tabControlMain.ItemSize" type="System.Drawing.Size, System.Drawing">
     <value>1, 23</value>
@@ -1599,7 +1599,7 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="listUsers.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
+    <value>Yu Gothic UI, 9pt</value>
   </data>
   <data name="listUsers.Location" type="System.Drawing.Point, System.Drawing">
     <value>-1, 0</value>
@@ -2280,7 +2280,7 @@
     <value>Left, Right</value>
   </data>
   <data name="lbStartingStatus.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
+    <value>Yu Gothic UI, 9pt</value>
   </data>
   <data name="lbStartingStatus.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 158</value>
@@ -2446,7 +2446,7 @@
     <value>Fill</value>
   </data>
   <data name="pl_simple.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
+    <value>Yu Gothic UI, 9pt</value>
   </data>
   <data name="pl_simple.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -2602,7 +2602,7 @@
     <value>Fill</value>
   </data>
   <data name="pl_perfGridHost.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
+    <value>Yu Gothic UI, 9pt</value>
   </data>
   <data name="pl_perfGridHost.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>

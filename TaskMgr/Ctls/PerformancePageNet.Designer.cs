@@ -48,9 +48,9 @@
             resources.ApplyResources(this.performanceInfos, "performanceInfos");
             this.performanceInfos.ColorText = System.Drawing.Color.Black;
             this.performanceInfos.ColorTitle = System.Drawing.Color.Gray;
-            this.performanceInfos.FontText = new System.Drawing.Font("微软雅黑", 9F);
-            this.performanceInfos.FontTextSpeical = new System.Drawing.Font("微软雅黑", 15F);
-            this.performanceInfos.FontTitle = new System.Drawing.Font("微软雅黑", 9F);
+            this.performanceInfos.FontText = new System.Drawing.Font("Yu Gothic UI", 9F);
+            this.performanceInfos.FontTextSpeical = new System.Drawing.Font("Yu Gothic UI", 15F);
+            this.performanceInfos.FontTitle = new System.Drawing.Font("Yu Gothic UI", 9F);
             this.performanceInfos.ItemMargan = 10;
             this.performanceInfos.LineOffest = 5;
             this.performanceInfos.MaxSpeicalItemsWidth = 170;
@@ -64,8 +64,8 @@
             // 
             resources.ApplyResources(this.performanceTitle, "performanceTitle");
             this.performanceTitle.Name = "performanceTitle";
-            this.performanceTitle.SmallTitleFont = new System.Drawing.Font("微软雅黑", 12F);
-            this.performanceTitle.TitleFont = new System.Drawing.Font("微软雅黑", 18F);
+            this.performanceTitle.SmallTitleFont = new System.Drawing.Font("Yu Gothic UI", 12F);
+            this.performanceTitle.TitleFont = new System.Drawing.Font("Yu Gothic UI", 18F);
             this.toolTip1.SetToolTip(this.performanceTitle, resources.GetString("performanceTitle.ToolTip"));
             this.performanceTitle.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PerformancePageNet_MouseClick);
             this.performanceTitle.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.PerformancePageNet_MouseDoubleClick);

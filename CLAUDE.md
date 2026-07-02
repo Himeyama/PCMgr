@@ -65,6 +65,10 @@ x86 のため 32bit ランタイムで確認する。`Debug\` を AppBase にし
 - **フォームのサテライト日本語化**: 全対象フォーム（`.en.resx` を持つ 22 個）に `.ja.resx` を作成し、
   csproj 登録＋サテライト生成の仕組みを整備。`dotnet build` で `Debug\ja\` が生成され、実行時に
   日本語で解決されることを確認済み。英語（`Debug\en\`）も併せて機能するようになった。
+- **Designer のフォント**: C# 側（`.resx` / `.Designer.cs`）の `微软雅黑`（Microsoft YaHei）を
+  全て `Yu Gothic UI` に置換済み（`FormMain`、`FormSettings`、`PerformancePageCpu/Ram/Disk/Net`）。
+  ネイティブ側 `TaskMgrCore\TaskMgrCore.rc`（PE ダンプ用ダイアログ）は未対応のまま残っている
+  （C# アプリの表示には影響しない）。
 
 ### 未対応（今後の候補）
 - **サテライト非対応フォーム**（`.en.resx` が無く Designer に中国語直書き）:
@@ -74,5 +78,3 @@ x86 のため 32bit ランタイムで確認する。`Debug\` を AppBase にし
 - ハードコード中国語（全言語で表示、`.cs` ロジック内）: `MainPagePerf.cs:294`（"资源信息页 "）、
   `MainNativeBridge.cs`（"窗口名称 ："）、`FormHelp.cs`（エラーメッセージ）、
   `FormSpyWindow.cs`（"正在加载……"）など。
-- Designer のフォント `微软雅黑`（Microsoft YaHei）は日本語も描画できるが、`Yu Gothic UI` 等への
-  変更は未実施。
