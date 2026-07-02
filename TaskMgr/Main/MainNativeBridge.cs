@@ -90,7 +90,7 @@ namespace PCMgr.Main
                     {
                         StringBuilder sb = new StringBuilder(260);
                         GetWindowText(wParam, sb, 260);
-                        FormWindowKillAsk fa = new FormWindowKillAsk("窗口名称 ：" + sb.ToString(), wParam);
+                        FormWindowKillAsk fa = new FormWindowKillAsk(LanuageMgr.GetStr("WindowNameLabel") + sb.ToString(), wParam);
                         fa.Show();
                         MAppWorkCall3(213, fa.Handle);
                         break;

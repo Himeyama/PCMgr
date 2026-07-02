@@ -291,7 +291,7 @@ namespace PCMgr.Main
             c.Anchor = AnchorStyles.Left | AnchorStyles.Top;//| AnchorStyles.Right | AnchorStyles.Bottom;
             //c.Size = new Size(splitContainerPerfCtls.Panel2.Width - 30, splitContainerPerfCtls.Panel2.Height - 30);
             c.Location = new Point(15, 15);
-            c.Text = "资源信息页 " + name;
+            c.Text = LanuageMgr.GetStr("ResourceInfoPage") + name;
             c.Font = tabControlMain.Font;
         }
         private void PerfPagesResize(Size targetSize)

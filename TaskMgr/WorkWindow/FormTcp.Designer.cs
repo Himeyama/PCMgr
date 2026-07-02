@@ -69,43 +69,43 @@
             // 
             // columnHeaderName
             // 
-            this.columnHeaderName.Text = "名称";
+            this.columnHeaderName.Text = "名前";
             this.columnHeaderName.Width = 194;
-            // 
+            //
             // columnHeaderProtocol
-            // 
-            this.columnHeaderProtocol.Text = "协议版本";
-            // 
+            //
+            this.columnHeaderProtocol.Text = "プロトコル";
+            //
             // columnHeaderLocalAddress
-            // 
-            this.columnHeaderLocalAddress.Text = "本地地址";
+            //
+            this.columnHeaderLocalAddress.Text = "ローカル アドレス";
             this.columnHeaderLocalAddress.Width = 135;
-            // 
+            //
             // columnHeaderLocalPort
-            // 
-            this.columnHeaderLocalPort.Text = "本地端口";
-            // 
+            //
+            this.columnHeaderLocalPort.Text = "ローカル ポート";
+            //
             // columnHeaderRemoteAddress
-            // 
-            this.columnHeaderRemoteAddress.Text = "远程地址";
+            //
+            this.columnHeaderRemoteAddress.Text = "リモート アドレス";
             this.columnHeaderRemoteAddress.Width = 150;
-            // 
+            //
             // columnHeaderRemotePort
-            // 
-            this.columnHeaderRemotePort.Text = "远程端口";
-            // 
+            //
+            this.columnHeaderRemotePort.Text = "リモート ポート";
+            //
             // columnHeaderState
-            // 
-            this.columnHeaderState.Text = "状态";
+            //
+            this.columnHeaderState.Text = "状態";
             this.columnHeaderState.Width = 98;
-            // 
+            //
             // buttonRefesh
-            // 
+            //
             this.buttonRefesh.Location = new System.Drawing.Point(12, 12);
             this.buttonRefesh.Name = "buttonRefesh";
             this.buttonRefesh.Size = new System.Drawing.Size(75, 23);
             this.buttonRefesh.TabIndex = 2;
-            this.buttonRefesh.Text = "刷新";
+            this.buttonRefesh.Text = "更新";
             this.buttonRefesh.UseVisualStyleBackColor = true;
             this.buttonRefesh.Click += new System.EventHandler(this.buttonRefesh_Click);
             // 
@@ -123,21 +123,21 @@
             // 
             this.复制ToolStripMenuItem.Name = "复制ToolStripMenuItem";
             this.复制ToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
-            this.复制ToolStripMenuItem.Text = "复制(&C)";
+            this.复制ToolStripMenuItem.Text = "コピー(&C)";
             this.复制ToolStripMenuItem.Click += new System.EventHandler(this.复制ToolStripMenuItem_Click);
             // 
             // 转到进程ToolStripMenuItem
             // 
             this.转到进程ToolStripMenuItem.Name = "转到进程ToolStripMenuItem";
             this.转到进程ToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
-            this.转到进程ToolStripMenuItem.Text = "转到进程(&G)";
+            this.转到进程ToolStripMenuItem.Text = "プロセスに移動(&G)";
             this.转到进程ToolStripMenuItem.Click += new System.EventHandler(this.转到进程ToolStripMenuItem_Click);
             // 
             // 刷新ToolStripMenuItem
             // 
             this.刷新ToolStripMenuItem.Name = "刷新ToolStripMenuItem";
             this.刷新ToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
-            this.刷新ToolStripMenuItem.Text = "刷新(&R)";
+            this.刷新ToolStripMenuItem.Text = "更新(&R)";
             this.刷新ToolStripMenuItem.Click += new System.EventHandler(this.刷新ToolStripMenuItem_Click);
             // 
             // FormTcp
@@ -150,7 +150,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormTcp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "TCP 连接";
+            this.Text = "TCP 接続";
             this.Load += new System.EventHandler(this.FormTcp_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);

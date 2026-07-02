@@ -69,12 +69,12 @@
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "时间";
+            this.columnHeader2.Text = "時刻";
             this.columnHeader2.Width = 150;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "输出";
+            this.columnHeader3.Text = "出力";
             this.columnHeader3.Width = 648;
             // 
             // toolStripMain
@@ -101,7 +101,7 @@
             this.toolStripButtonSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonSave.Name = "toolStripButtonSave";
             this.toolStripButtonSave.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButtonSave.Text = "保存到文件";
+            this.toolStripButtonSave.Text = "ファイルに保存";
             this.toolStripButtonSave.Click += new System.EventHandler(this.toolStripButtonSave_Click);
             // 
             // toolStripSeparator2
@@ -119,7 +119,7 @@
             this.toolStripButtonAutoScroll.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonAutoScroll.Name = "toolStripButtonAutoScroll";
             this.toolStripButtonAutoScroll.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButtonAutoScroll.Text = "自动滚动";
+            this.toolStripButtonAutoScroll.Text = "自動スクロール";
             // 
             // toolStripButtonClear
             // 
@@ -127,7 +127,7 @@
             this.toolStripButtonClear.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonClear.Name = "toolStripButtonClear";
             this.toolStripButtonClear.Size = new System.Drawing.Size(52, 22);
-            this.toolStripButtonClear.Text = "清除";
+            this.toolStripButtonClear.Text = "クリア";
             this.toolStripButtonClear.Click += new System.EventHandler(this.toolStripButtonClear_Click);
             // 
             // toolStripSeparator1
@@ -142,7 +142,7 @@
             this.toolStripButtonFilter.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonFilter.Name = "toolStripButtonFilter";
             this.toolStripButtonFilter.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButtonFilter.Text = "过滤";
+            this.toolStripButtonFilter.Text = "フィルター";
             this.toolStripButtonFilter.Click += new System.EventHandler(this.toolStripButtonFilter_Click);
             // 
             // toolStripButtonFind
@@ -151,7 +151,7 @@
             this.toolStripButtonFind.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonFind.Name = "toolStripButtonFind";
             this.toolStripButtonFind.Size = new System.Drawing.Size(52, 22);
-            this.toolStripButtonFind.Text = "查找";
+            this.toolStripButtonFind.Text = "検索";
             this.toolStripButtonFind.Click += new System.EventHandler(this.toolStripButtonFind_Click);
             // 
             // toolStripButtonHelp
@@ -161,7 +161,7 @@
             this.toolStripButtonHelp.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonHelp.Name = "toolStripButtonHelp";
             this.toolStripButtonHelp.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButtonHelp.Text = "帮助";
+            this.toolStripButtonHelp.Text = "ヘルプ";
             // 
             // FormKDbgPrint
             // 
@@ -172,7 +172,7 @@
             this.Controls.Add(this.listViewOutPut);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormKDbgPrint";
-            this.Text = "DbgPrint 输出窗口";
+            this.Text = "DbgPrint 出力ウィンドウ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormKDbgPrint_FormClosing);
             this.Load += new System.EventHandler(this.FormKDbgPrint_Load);
             this.toolStripMain.ResumeLayout(false);

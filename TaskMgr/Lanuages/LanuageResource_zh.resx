@@ -532,6 +532,9 @@ PCMgr 需要管理员权限 才能对系统进行控制和管理。
   <data name="ResProcFailed" xml:space="preserve">
     <value>无法继续进程运行</value>
   </data>
+  <data name="ResourceInfoPage" xml:space="preserve">
+    <value>资源信息页 </value>
+  </data>
   <data name="Size" xml:space="preserve">
     <value>大小</value>
   </data>
@@ -564,6 +567,9 @@ PCMgr 需要管理员权限 才能对系统进行控制和管理。
   </data>
   <data name="WindowText" xml:space="preserve">
     <value>窗口文字</value>
+  </data>
+  <data name="WindowNameLabel" xml:space="preserve">
+    <value>窗口名称 ：</value>
   </data>
   <data name="FreeFailed" xml:space="preserve">
     <value>卸载模块错误</value>

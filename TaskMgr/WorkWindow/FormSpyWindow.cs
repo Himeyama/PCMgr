@@ -265,7 +265,7 @@ namespace PCMgr.WorkWindow
                 d.hwnd = wi.Hwnd;
                 d.info = wi;
                 node.Tag = d;
-                TreeNode ndnull = new TreeNode("正在加载……");
+                TreeNode ndnull = new TreeNode(Lanuages.LanuageMgr.GetStr("Loading", false));
                 ndnull.Name = "ndnull";
                 node.Nodes.Add(ndnull);
                 treeNode.Nodes.Add(node);

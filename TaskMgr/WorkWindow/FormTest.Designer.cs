@@ -129,19 +129,19 @@
             this.打开应用ToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.打开应用ToolStripMenuItem.Name = "打开应用ToolStripMenuItem";
             this.打开应用ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.打开应用ToolStripMenuItem.Text = "打开应用(&O)";
+            this.打开应用ToolStripMenuItem.Text = "アプリを開く(&O)";
             // 
             // 卸载应用ToolStripMenuItem
             // 
             this.卸载应用ToolStripMenuItem.Name = "卸载应用ToolStripMenuItem";
             this.卸载应用ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.卸载应用ToolStripMenuItem.Text = "卸载应用(&U)";
+            this.卸载应用ToolStripMenuItem.Text = "アプリをアンインストール(&U)";
             // 
             // 打开安装位置ToolStripMenuItem
             // 
             this.打开安装位置ToolStripMenuItem.Name = "打开安装位置ToolStripMenuItem";
             this.打开安装位置ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.打开安装位置ToolStripMenuItem.Text = "打开安装位置(&D)";
+            this.打开安装位置ToolStripMenuItem.Text = "インストール先を開く(&D)";
             // 
             // 复制名称ToolStripMenuItem
             // 
@@ -150,14 +150,14 @@
             this.复制名称ToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.复制名称ToolStripMenuItem.Name = "复制名称ToolStripMenuItem";
             this.复制名称ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.复制名称ToolStripMenuItem.Text = "复制名称(&N)";
+            this.复制名称ToolStripMenuItem.Text = "名前をコピー(&N)";
             // 
             // 复制完整名称ToolStripMenuItem
             // 
             this.复制完整名称ToolStripMenuItem.Enabled = false;
             this.复制完整名称ToolStripMenuItem.Name = "复制完整名称ToolStripMenuItem";
             this.复制完整名称ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.复制完整名称ToolStripMenuItem.Text = "复制完整名称(&N)";
+            this.复制完整名称ToolStripMenuItem.Text = "完全な名前をコピー(&N)";
             // 
             // 复制发布者ToolStripMenuItem
             // 
@@ -166,7 +166,7 @@
             this.进行ToolStripMenuItem});
             this.复制发布者ToolStripMenuItem.Name = "复制发布者ToolStripMenuItem";
             this.复制发布者ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.复制发布者ToolStripMenuItem.Text = "复制(&C)";
+            this.复制发布者ToolStripMenuItem.Text = "コピー(&C)";
             // 
             // 项目1ToolStripMenuItem
             // 
@@ -175,13 +175,13 @@
             this.项目1ToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.项目1ToolStripMenuItem.Name = "项目1ToolStripMenuItem";
             this.项目1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.项目1ToolStripMenuItem.Text = "项目1";
+            this.项目1ToolStripMenuItem.Text = "項目1";
             // 
             // 进行ToolStripMenuItem
             // 
             this.进行ToolStripMenuItem.Name = "进行ToolStripMenuItem";
             this.进行ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.进行ToolStripMenuItem.Text = "进行";
+            this.进行ToolStripMenuItem.Text = "実行";
             // 
             // toolStripSeparator1
             // 

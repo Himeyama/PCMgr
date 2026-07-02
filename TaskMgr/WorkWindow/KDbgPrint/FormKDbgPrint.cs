@@ -29,7 +29,7 @@ namespace PCMgr.WorkWindow
         private void toolStripButtonSave_Click(object sender, EventArgs e)
         {
             StringBuilder sb = new StringBuilder(260);
-            if (MSaveFileSingal(Handle, null, "Save to..", "文本文件\0*.txt\0所有文件\0*.*\0", null, ".txt", sb, 260))
+            if (MSaveFileSingal(Handle, null, "Save to..", "テキスト ファイル\0*.txt\0すべてのファイル\0*.*\0", null, ".txt", sb, 260))
                 saveAll(sb.ToString());
         }
         private void toolStripButtonClear_Click(object sender, EventArgs e)

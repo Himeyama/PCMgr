@@ -51,7 +51,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormHelp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "帮助文档";
+            this.Text = "ヘルプ ドキュメント";
             this.Load += new System.EventHandler(this.FormHelp_Load);
             this.ResumeLayout(false);
 

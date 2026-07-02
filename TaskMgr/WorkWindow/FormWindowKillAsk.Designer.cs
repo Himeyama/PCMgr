@@ -49,7 +49,7 @@
             this.btnKill.Name = "btnKill";
             this.btnKill.Size = new System.Drawing.Size(78, 44);
             this.btnKill.TabIndex = 1;
-            this.btnKill.Text = "杀死";
+            this.btnKill.Text = "強制終了";
             this.btnKill.UseVisualStyleBackColor = true;
             this.btnKill.Click += new System.EventHandler(this.btnKill_Click);
             // 
@@ -59,7 +59,7 @@
             this.btnWndize.Name = "btnWndize";
             this.btnWndize.Size = new System.Drawing.Size(99, 44);
             this.btnWndize.TabIndex = 2;
-            this.btnWndize.Text = "窗口化";
+            this.btnWndize.Text = "ウィンドウ化";
             this.btnWndize.UseVisualStyleBackColor = true;
             this.btnWndize.Click += new System.EventHandler(this.btnWndize_Click);
             // 
@@ -69,7 +69,7 @@
             this.btnNoTop.Name = "btnNoTop";
             this.btnNoTop.Size = new System.Drawing.Size(117, 44);
             this.btnNoTop.TabIndex = 3;
-            this.btnNoTop.Text = "取消置顶";
+            this.btnNoTop.Text = "最前面表示を解除";
             this.btnNoTop.UseVisualStyleBackColor = true;
             this.btnNoTop.Click += new System.EventHandler(this.btnNoTop_Click);
             // 
@@ -84,7 +84,7 @@
             this.Controls.Add(this.lb_wndinfo);
             this.Name = "FormWindowKillAsk";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "清除窗口？";
+            this.Text = "ウィンドウを消去しますか？";
             this.TopMost = true;
             this.Deactivate += new System.EventHandler(this.FormWindowKillAsk_Deactivate);
             this.ResumeLayout(false);

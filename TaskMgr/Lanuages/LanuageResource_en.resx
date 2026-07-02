@@ -532,6 +532,9 @@ has found 64 bits of PCMgr in your software directory, clicking "start the 64 bi
   <data name="ResProcFailed" xml:space="preserve">
     <value>Unable to resume process</value>
   </data>
+  <data name="ResourceInfoPage" xml:space="preserve">
+    <value>Resource Info Page </value>
+  </data>
   <data name="Size" xml:space="preserve">
     <value>Size</value>
   </data>
@@ -564,6 +567,9 @@ has found 64 bits of PCMgr in your software directory, clicking "start the 64 bi
   </data>
   <data name="WindowText" xml:space="preserve">
     <value>Window Text</value>
+  </data>
+  <data name="WindowNameLabel" xml:space="preserve">
+    <value>Window name: </value>
   </data>
   <data name="FreeFailed" xml:space="preserve">
     <value>Free module failed</value>

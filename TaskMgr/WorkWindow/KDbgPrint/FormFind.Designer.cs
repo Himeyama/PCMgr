@@ -55,7 +55,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 12);
             this.label1.TabIndex = 1;
-            this.label1.Text = "字符串";
+            this.label1.Text = "文字列";
             // 
             // buttonFind
             // 
@@ -64,7 +64,7 @@
             this.buttonFind.Name = "buttonFind";
             this.buttonFind.Size = new System.Drawing.Size(24, 23);
             this.buttonFind.TabIndex = 2;
-            this.toolTip1.SetToolTip(this.buttonFind, "查找");
+            this.toolTip1.SetToolTip(this.buttonFind, "検索");
             this.buttonFind.UseVisualStyleBackColor = true;
             this.buttonFind.Click += new System.EventHandler(this.buttonFind_Click);
             // 
@@ -75,7 +75,7 @@
             this.checkBoxFullSearch.Name = "checkBoxFullSearch";
             this.checkBoxFullSearch.Size = new System.Drawing.Size(72, 16);
             this.checkBoxFullSearch.TabIndex = 3;
-            this.checkBoxFullSearch.Text = "全字匹配";
+            this.checkBoxFullSearch.Text = "完全一致";
             this.checkBoxFullSearch.UseVisualStyleBackColor = true;
             // 
             // checkBoxDevideLorH
@@ -85,7 +85,7 @@
             this.checkBoxDevideLorH.Name = "checkBoxDevideLorH";
             this.checkBoxDevideLorH.Size = new System.Drawing.Size(84, 16);
             this.checkBoxDevideLorH.TabIndex = 4;
-            this.checkBoxDevideLorH.Text = "区分大小写";
+            this.checkBoxDevideLorH.Text = "大文字と小文字を区別";
             this.checkBoxDevideLorH.UseVisualStyleBackColor = true;
             // 
             // buttonClose
@@ -94,7 +94,7 @@
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 23);
             this.buttonClose.TabIndex = 5;
-            this.buttonClose.Text = "关闭";
+            this.buttonClose.Text = "閉じる";
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
@@ -107,7 +107,7 @@
             this.radioButtonFindUp.Size = new System.Drawing.Size(71, 16);
             this.radioButtonFindUp.TabIndex = 6;
             this.radioButtonFindUp.TabStop = true;
-            this.radioButtonFindUp.Text = "向上查找";
+            this.radioButtonFindUp.Text = "上へ検索";
             this.radioButtonFindUp.UseVisualStyleBackColor = true;
             // 
             // radioButtonFindLow
@@ -117,7 +117,7 @@
             this.radioButtonFindLow.Name = "radioButtonFindLow";
             this.radioButtonFindLow.Size = new System.Drawing.Size(71, 16);
             this.radioButtonFindLow.TabIndex = 7;
-            this.radioButtonFindLow.Text = "向下查找";
+            this.radioButtonFindLow.Text = "下へ検索";
             this.radioButtonFindLow.UseVisualStyleBackColor = true;
             // 
             // FormFind
@@ -139,7 +139,7 @@
             this.MinimizeBox = false;
             this.Name = "FormFind";
             this.ShowInTaskbar = false;
-            this.Text = "查找";
+            this.Text = "検索";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.FormFind_Load);
             this.ResumeLayout(false);

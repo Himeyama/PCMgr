@@ -522,6 +522,9 @@ PCMgr が使用する&lt;A HREF="#"&gt;管理者権限の詳細&lt;/A&gt; を確
   <data name="ResProcFailed" xml:space="preserve">
     <value>プロセスの再開に失敗しました</value>
   </data>
+  <data name="ResourceInfoPage" xml:space="preserve">
+    <value>リソース情報ページ </value>
+  </data>
   <data name="Size" xml:space="preserve">
     <value>サイズ</value>
   </data>
@@ -554,6 +557,9 @@ PCMgr が使用する&lt;A HREF="#"&gt;管理者権限の詳細&lt;/A&gt; を確
   </data>
   <data name="WindowText" xml:space="preserve">
     <value>ウィンドウテキスト</value>
+  </data>
+  <data name="WindowNameLabel" xml:space="preserve">
+    <value>ウィンドウ名：</value>
   </data>
   <data name="FreeFailed" xml:space="preserve">
     <value>モジュールのアンロードエラー</value>

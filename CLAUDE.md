@@ -142,12 +142,21 @@ x86 のため 32bit ランタイムで確認する。`Debug\` を AppBase にし
   PCMgr64.exe` を起動できることを確認済み（日本語サテライトも含め動作）。カーネルドライバ
   （`PCMgrKernel32.sys`）は WDK が無くビルド対象外だが、未ロード時のグレースフルな無効化は
   既存の設計どおり機能する。詳細は「64bit 版のビルドと起動」節。
+- **サテライト非対応フォームのハードコード中国語**: `FormTcp` / `FormTest` / `FormWindowKillAsk` /
+  `FormFind` / `FormKDbgPrint` / `FormHelp` の Designer.cs に直書きされていた `.Text`（ボタン、
+  列見出し、メニュー項目、フォームタイトル等）と `FormKDbgPrint.cs` のファイルフィルター文字列を
+  日本語に置換済み（resx 化はせず直接書き換え。`ToolStripMenuItem` 等の中国語識別子名・`.Name`
+  は非表示のため未変更）。`FormSpeedBall` / `FormAlwaysOnTop` / `FormSL` はもともと中国語ハード
+  コードなし（確認済み、対応不要）。
+- **ハードコード中国語（全言語で表示、`.cs` ロジック内）**: `MainPagePerf.cs`（`c.Text = "资源信息页 "`）
+  と `MainNativeBridge.cs`（`"窗口名称 ："`）は `LanuageResource_{zh,en,ja}.resx` に新規キー
+  `ResourceInfoPage` / `WindowNameLabel` を追加し `LanuageMgr.GetStr` 経由に変更（既存の GetStr
+  基盤に乗せたため zh/en 表示も維持）。`FormHelp.cs` の IE バージョンエラー `TaskDialog` は
+  フォーム全体が未ローカライズなため直接日本語に置換。`FormSpyWindow.cs:268` の `"正在加载……"` は
+  同ファイル内の既存呼び出し `Lanuages.LanuageMgr.GetStr("Loading", false)`（231 行目と同じ）に
+  統一。
 
 ### 未対応（今後の候補）
-- **サテライト非対応フォーム**（`.en.resx` が無く Designer に中国語直書き）:
-  `FormTcp` / `FormTest` / `FormWindowKillAsk` / `FormFind` / `FormKDbgPrint` / `FormHelp` /
-  `FormSpeedBall` / `FormAlwaysOnTop` / `FormSL`。英語版でも未ローカライズ。日本語化するには
-  Designer 直書きを resx 化（Localizable 化）するか、コードで対応する必要がある。
-- ハードコード中国語（全言語で表示、`.cs` ロジック内）: `MainPagePerf.cs:294`（"资源信息页 "）、
-  `MainNativeBridge.cs`（"窗口名称 ："）、`FormHelp.cs`（エラーメッセージ）、
-  `FormSpyWindow.cs`（"正在加载……"）など。
+- 上記 Designer.cs 直書きフォームの中国語識別子名（`复制ToolStripMenuItem` 等の `ToolStripMenuItem`
+  フィールド名・メソッド名）は非表示のため未対応のまま。表示上は問題ないが、将来リネームする場合は
+  Designer.cs と対応する `.cs` のイベントハンドラー参照を同時に直す必要がある。

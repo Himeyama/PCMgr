@@ -22,8 +22,8 @@ namespace PCMgr.WorkWindow
             if (!NativeMethods.MREG_IsCurrentIEVersionOK(11000, NativeMethods.MAppGetName()))
                 if(!NativeMethods.MREG_SetCurrentIEVersion(11000, NativeMethods.MAppGetName()))
                 {
-                    TaskDialog t = new TaskDialog("此页面无法打开", "错误");
-                    t.Content = "您的 IE 版本过低，无法打开此页面。或者，您可以使用其他浏览器访问我们的在线帮助：<A HREF=\"http://127.0.0.1/softs/pcmgr/help/\">在线帮助文档</A>";
+                    TaskDialog t = new TaskDialog("このページは開けません", "エラー");
+                    t.Content = "お使いの IE のバージョンが古いため、このページを開けません。他のブラウザーでオンライン ヘルプにアクセスすることもできます：<A HREF=\"http://127.0.0.1/softs/pcmgr/help/\">オンライン ヘルプ ドキュメント</A>";
                     t.EnableHyperlinks = true;
                     t.Show(this);
                 }
