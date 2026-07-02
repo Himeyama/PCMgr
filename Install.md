@@ -13,13 +13,13 @@
 
 ### x86 版
 
-1. `Release/Release_x86_1.3.2.6.zip` を任意のフォルダに展開する
+1. [Release_x86_1.3.2.6.zip をダウンロード](https://github.com/imengyu/PCMgr/raw/master/Release/Release_x86_1.3.2.6.zip) して任意のフォルダに展開する
 2. `ThirdPart/AeroWizard/AeroWizard32.dll` を展開先フォルダにコピーする
 3. `PCMgr32.exe` を管理者として実行する
 
 ### x64 版
 
-1. `Release_64/Release_x64_1.3.2.6.zip` を任意のフォルダに展開する
+1. [Release_x64_1.3.2.6.zip をダウンロード](https://github.com/imengyu/PCMgr/raw/master/Release_64/Release_64_1.3.2.6.zip) して任意のフォルダに展開する
 2. `ThirdPart/AeroWizard/AeroWizard64.dll` を展開先フォルダにコピーする
 3. `PCMgr64.exe` を管理者として実行する
 

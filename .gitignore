@@ -1,6 +1,11 @@
 .vs/
 obj/
 bin/
+Debug/
+Debug_64/
+Release/
+Release_64/
+*.zip
 *.dll
 *.exe
 *.pdb
