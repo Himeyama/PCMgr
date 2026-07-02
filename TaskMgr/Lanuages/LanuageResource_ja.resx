@@ -1,17 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,37 +26,27 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
 
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
@@ -118,302 +108,302 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AskTitle" xml:space="preserve">
-    <value>疑问</value>
+    <value>確認</value>
   </data>
   <data name="AutoStart" xml:space="preserve">
-    <value>自动</value>
+    <value>自動</value>
   </data>
   <data name="BtnEndProcess" xml:space="preserve">
-    <value>结束进程(&amp;E)</value>
+    <value>プロセスの終了(&amp;E)</value>
   </data>
   <data name="BtnEndTask" xml:space="preserve">
-    <value>结束任务(&amp;E)</value>
+    <value>タスクの終了(&amp;E)</value>
   </data>
   <data name="BtnRestart" xml:space="preserve">
-    <value>重新启动(&amp;E)</value>
+    <value>再起動(&amp;E)</value>
   </data>
   <data name="CancelRun" xml:space="preserve">
-    <value>取消运行</value>
+    <value>実行のキャンセル</value>
   </data>
   <data name="ContinueRun" xml:space="preserve">
-    <value>继续运行</value>
+    <value>続行</value>
   </data>
   <data name="DemandStart" xml:space="preserve">
-    <value>手动</value>
+    <value>手動</value>
   </data>
   <data name="Disabled" xml:space="preserve">
-    <value>禁用</value>
+    <value>無効</value>
   </data>
   <data name="DoNotRemidMeLater" xml:space="preserve">
-    <value>不要再提醒我了</value>
+    <value>次回から表示しない</value>
   </data>
   <data name="DriverLoad" xml:space="preserve">
-    <value>驱动加载</value>
+    <value>ドライバーの読み込み</value>
   </data>
   <data name="ErrTitle" xml:space="preserve">
-    <value>错误</value>
+    <value>エラー</value>
   </data>
   <data name="FailedGetPrivileges" xml:space="preserve">
-    <value>提权失败！</value>
+    <value>権限の昇格に失敗しました！</value>
   </data>
   <data name="FileCopyed" xml:space="preserve">
-    <value>文件已经复制到剪贴板</value>
+    <value>ファイルをクリップボードにコピーしました</value>
   </data>
   <data name="FileCuted" xml:space="preserve">
-    <value>文件已经剪切到剪贴板</value>
+    <value>ファイルをクリップボードに切り取りました</value>
   </data>
   <data name="FileSystem" xml:space="preserve">
-    <value>文件系统</value>
+    <value>ファイルシステム</value>
   </data>
   <data name="FolderCopyed" xml:space="preserve">
-    <value>文件夹已经复制到剪贴板</value>
+    <value>フォルダーをクリップボードにコピーしました</value>
   </data>
   <data name="FolderCuted" xml:space="preserve">
-    <value>文件夹已经剪切到剪贴板</value>
+    <value>フォルダーをクリップボードに切り取りました</value>
   </data>
   <data name="FolderHasExist" xml:space="preserve">
-    <value>指定的文件夹已经存在</value>
+    <value>指定したフォルダーは既に存在します</value>
   </data>
   <data name="GetFailed" xml:space="preserve">
-    <value>获取失败</value>
+    <value>取得に失敗しました</value>
   </data>
   <data name="InvalidFileName" xml:space="preserve">
-    <value>文件名无效。</value>
+    <value>ファイル名が無効です。</value>
   </data>
   <data name="KernelDriver" xml:space="preserve">
-    <value>内核服务</value>
+    <value>カーネルサービス</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>正在加载</value>
+    <value>読み込み中</value>
   </data>
   <data name="LocalService" xml:space="preserve">
-    <value>本地服务</value>
+    <value>ローカルサービス</value>
   </data>
   <data name="LocalServiceAndNoImpersonation" xml:space="preserve">
-    <value>本地服务（模拟）</value>
+    <value>ローカルサービス（偽装）</value>
   </data>
   <data name="LocalServiceNetworkRestricted" xml:space="preserve">
-    <value>本地服务（网络受限）</value>
+    <value>ローカルサービス（ネットワーク制限）</value>
   </data>
   <data name="LocalServiceNoNetwork" xml:space="preserve">
-    <value>本地服务（无网络）</value>
+    <value>ローカルサービス（ネットワークなし）</value>
   </data>
   <data name="LocalSystem" xml:space="preserve">
-    <value>本地系统</value>
+    <value>ローカルシステム</value>
   </data>
   <data name="LocalSystemNetworkRestricted" xml:space="preserve">
-    <value>本地系统（网络受限）</value>
+    <value>ローカルシステム（ネットワーク制限）</value>
   </data>
   <data name="NeedAdmin" xml:space="preserve">
-    <value>软件需要更多的权限...</value>
+    <value>このソフトウェアには追加の権限が必要です...</value>
   </data>
   <data name="NetworkService" xml:space="preserve">
-    <value>网络服务</value>
+    <value>ネットワークサービス</value>
   </data>
   <data name="NetworkServiceAndNoImpersonation" xml:space="preserve">
-    <value>网络服务（模拟）</value>
+    <value>ネットワークサービス（偽装）</value>
   </data>
   <data name="NetworkServiceNetworkRestricted" xml:space="preserve">
-    <value>网络服务（网络受限）</value>
+    <value>ネットワークサービス（ネットワーク制限）</value>
   </data>
   <data name="NewFolder" xml:space="preserve">
-    <value>新建文件夹</value>
+    <value>新しいフォルダー</value>
   </data>
   <data name="NewFolderFailed" xml:space="preserve">
-    <value>新建文件夹失败</value>
+    <value>フォルダーの作成に失敗しました</value>
   </data>
   <data name="NewFolderSuccess" xml:space="preserve">
-    <value>新建文件夹成功</value>
+    <value>フォルダーを作成しました</value>
   </data>
   <data name="OpenAsk" xml:space="preserve">
-    <value>您想打开此文件吗？</value>
+    <value>このファイルを開きますか？</value>
   </data>
   <data name="PathCopyed" xml:space="preserve">
-    <value>路径已经复制到剪贴板</value>
+    <value>パスをクリップボードにコピーしました</value>
   </data>
   <data name="PathStart" xml:space="preserve">
-    <value>文件路径 : </value>
+    <value>ファイルパス: </value>
   </data>
   <data name="PathUnExists" xml:space="preserve">
-    <value>路径不存在！</value>
+    <value>パスが存在しません！</value>
   </data>
   <data name="PleaseEnterPath" xml:space="preserve">
-    <value>请输入要跳转的路径！</value>
+    <value>ジャンプ先のパスを入力してください！</value>
   </data>
   <data name="Process32Bit" xml:space="preserve">
-    <value>32位</value>
+    <value>32ビット</value>
   </data>
   <data name="ProcessCount" xml:space="preserve">
-    <value>进程数</value>
+    <value>プロセス数</value>
   </data>
   <data name="Ready" xml:space="preserve">
-    <value>就绪</value>
+    <value>準備完了</value>
   </data>
   <data name="ReadyStatus" xml:space="preserve">
-    <value>就绪  共</value>
+    <value>準備完了　合計</value>
   </data>
   <data name="ReadyStatusEnd" xml:space="preserve">
-    <value>个项目</value>
+    <value>個の項目</value>
   </data>
   <data name="ReadyStatusEnd2" xml:space="preserve">
-    <value>个项目  选择了</value>
+    <value>個の項目　選択中</value>
   </data>
   <data name="RequestAdminText" xml:space="preserve">
-    <value>检测到您没有赋予 PCMgr 管理员权限，这会导致一些高级功能不可用。
-PCMgr 需要管理员权限 才能对系统进行控制和管理。
-了解什么是&lt;A HREF="#"&gt;管理员权限&lt;/A&gt;。
-了解本软件使用&lt;A HREF="#"&gt;管理员权限控制和管理的详情&lt;/A&gt;。</value>
+    <value>PCMgr に管理者権限が付与されていないため、一部の高度な機能が利用できません。
+PCMgr にはシステムの制御と管理に管理者権限が必要です。
+&lt;A HREF="#"&gt;管理者権限&lt;/A&gt; について確認する。
+PCMgr が使用する&lt;A HREF="#"&gt;管理者権限の詳細&lt;/A&gt; を確認する。</value>
   </data>
   <data name="Run64" xml:space="preserve">
-    <value>运行64位版本</value>
+    <value>64ビット版を実行</value>
   </data>
   <data name="RunAsAdmin" xml:space="preserve">
-    <value>以管理员身份重启软件</value>
+    <value>管理者として再起動</value>
   </data>
   <data name="Second" xml:space="preserve">
     <value>秒</value>
   </data>
   <data name="ServiceCount" xml:space="preserve">
-    <value>服务数</value>
+    <value>サービス数</value>
   </data>
   <data name="ServiceHost" xml:space="preserve">
-    <value>服务主机</value>
+    <value>サービスホスト</value>
   </data>
   <data name="StartSCMFailed" xml:space="preserve">
-    <value>无法启动服务管理器</value>
+    <value>サービスマネージャーを起動できません</value>
   </data>
   <data name="StatusHang" xml:space="preserve">
-    <value>无响应</value>
+    <value>応答なし</value>
   </data>
   <data name="StatusPaused" xml:space="preserve">
-    <value>已暂停</value>
+    <value>一時停止中</value>
   </data>
   <data name="StatusRunning" xml:space="preserve">
-    <value>正在运行</value>
+    <value>実行中</value>
   </data>
   <data name="StatusStopped" xml:space="preserve">
-    <value>已停止</value>
+    <value>停止済み</value>
   </data>
   <data name="SystemIdleProcess" xml:space="preserve">
-    <value>系统空闲进程</value>
+    <value>システムアイドルプロセス</value>
   </data>
   <data name="SystemService" xml:space="preserve">
-    <value>系统服务</value>
+    <value>システムサービス</value>
   </data>
   <data name="TipTitle" xml:space="preserve">
-    <value>提示</value>
+    <value>ヒント</value>
   </data>
   <data name="TitleApp" xml:space="preserve">
-    <value>应用</value>
+    <value>アプリ</value>
   </data>
   <data name="TitleBackGround" xml:space="preserve">
-    <value>后台进程</value>
+    <value>バックグラウンドプロセス</value>
   </data>
   <data name="TitleBaseAddress" xml:space="preserve">
-    <value>基地址</value>
+    <value>ベースアドレス</value>
   </data>
   <data name="TitleCmdLine" xml:space="preserve">
-    <value>命令行</value>
+    <value>コマンドライン</value>
   </data>
   <data name="TitleContinue" xml:space="preserve">
-    <value>确定继续吗？</value>
+    <value>続行しますか？</value>
   </data>
   <data name="TitleDescription" xml:space="preserve">
-    <value>说明</value>
+    <value>説明</value>
   </data>
   <data name="TitleDisk" xml:space="preserve">
-    <value>磁盘</value>
+    <value>ディスク</value>
   </data>
   <data name="TitleDriverLoadPath" xml:space="preserve">
-    <value>加载顺序</value>
+    <value>読み込み順序</value>
   </data>
   <data name="TitleDriverName" xml:space="preserve">
-    <value>驱动名称</value>
+    <value>ドライバー名</value>
   </data>
   <data name="TitleDriverObj" xml:space="preserve">
-    <value>驱动对象</value>
+    <value>ドライバーオブジェクト</value>
   </data>
   <data name="TitleDriverPath" xml:space="preserve">
-    <value>驱动路径</value>
+    <value>ドライバーパス</value>
   </data>
   <data name="TitleDriverScName" xml:space="preserve">
-    <value>服务名</value>
+    <value>サービス名</value>
   </data>
   <data name="TitleDriverSize" xml:space="preserve">
-    <value>大小</value>
+    <value>サイズ</value>
   </data>
   <data name="TitleFullName" xml:space="preserve">
-    <value>完整名称</value>
+    <value>完全名</value>
   </data>
   <data name="TitleInstallDir" xml:space="preserve">
-    <value>安装路径</value>
+    <value>インストールパス</value>
   </data>
   <data name="TitleLogoOff" xml:space="preserve">
-    <value>您即将注销。</value>
+    <value>サインアウトしようとしています。</value>
   </data>
   <data name="TitleName" xml:space="preserve">
-    <value>名称</value>
+    <value>名前</value>
   </data>
   <data name="TitleNet" xml:space="preserve">
-    <value>网络</value>
+    <value>ネットワーク</value>
   </data>
   <data name="TitleProcName" xml:space="preserve">
-    <value>进程名称</value>
+    <value>プロセス名</value>
   </data>
   <data name="TitleProcPath" xml:space="preserve">
-    <value>进程路径</value>
+    <value>プロセスパス</value>
   </data>
   <data name="TitlePublisher" xml:space="preserve">
-    <value>发布者</value>
+    <value>発行元</value>
   </data>
   <data name="TitleRam" xml:space="preserve">
-    <value>内存</value>
+    <value>メモリ</value>
   </data>
   <data name="TitleReboot" xml:space="preserve">
-    <value>您即将重启。</value>
+    <value>再起動しようとしています。</value>
   </data>
   <data name="TitleRestart" xml:space="preserve">
-    <value>您即将重启。</value>
+    <value>再起動しようとしています。</value>
   </data>
   <data name="TitleShutdown" xml:space="preserve">
-    <value>您即将关机</value>
+    <value>シャットダウンしようとしています</value>
   </data>
   <data name="TitleStatus" xml:space="preserve">
-    <value>状态</value>
+    <value>状態</value>
   </data>
   <data name="TitleWinApp" xml:space="preserve">
-    <value>Windows进程</value>
+    <value>Windowsプロセス</value>
   </data>
   <data name="UnistackSvcGroup" xml:space="preserve">
-    <value>Unistack 服务组</value>
+    <value>Unistackサービスグループ</value>
   </data>
   <data name="UserService" xml:space="preserve">
-    <value>用户服务</value>
+    <value>ユーザーサービス</value>
   </data>
   <data name="UWPEnumFail" xml:space="preserve">
-    <value>无法枚举通用应用</value>
+    <value>ユニバーサルアプリを列挙できません</value>
   </data>
   <data name="VisitFolderFailed" xml:space="preserve">
-    <value>无法读取文件夹</value>
+    <value>フォルダーを読み取れません</value>
   </data>
   <data name="X64WarnFinded64Text" xml:space="preserve">
     <value>
-已经在您的软件目录下找到64位的 PCMgr ，点击”启动64位版本“可以直接启动软件。</value>
+ソフトウェアのディレクトリに64ビット版のPCMgrが見つかりました。「64ビット版を起動」をクリックすると直接起動できます。</value>
   </data>
   <data name="X64WarnMoreText" xml:space="preserve">
-    <value>当前版本的 PCMgr 是 32位的，而您的系统版本是64位的，一些高级功能（比如内核驱动查看）必须使用64位的驱动，所以此版本无法使用这些高级功能。</value>
+    <value>現在のPCMgrは32ビット版です。64ビットシステムでは、カーネルドライバーの表示など一部の高度な機能は64ビットドライバーが必要なため利用できません。</value>
   </data>
   <data name="X64WarnText" xml:space="preserve">
-    <value>检测到您在64位系统中运行32位的 PCMgr ，这将导致某些功能不可用。您还要继续运行软件吗？</value>
+    <value>32ビット版を64ビット環境で実行中です。一部の機能が利用できません。続行しますか？</value>
   </data>
   <data name="X64WarnTitle" xml:space="preserve">
-    <value>检测到软件版本与系统版本不符</value>
+    <value>ソフトウェアバージョン不一致</value>
   </data>
   <data name="RequestAdminTitle" xml:space="preserve">
-    <value>我需要更多权限</value>
+    <value>追加の権限が必要です</value>
   </data>
   <data name="LanuageChangedTip" xml:space="preserve">
-    <value>语言设置只有您重新打开软件才会生效</value>
+    <value>言語設定はソフトウェアの再起動後に有効になります</value>
   </data>
   <data name="TitleCPU" xml:space="preserve">
     <value>CPU</value>
@@ -422,876 +412,878 @@ PCMgr 需要管理员权限 才能对系统进行控制和管理。
     <value>PID</value>
   </data>
   <data name="AccessDenied" xml:space="preserve">
-    <value>拒绝访问</value>
+    <value>アクセスが拒否されました</value>
   </data>
   <data name="InvalidProcess" xml:space="preserve">
-    <value>无效进程</value>
+    <value>無効なプロセス</value>
   </data>
   <data name="KillAskContent" xml:space="preserve">
-    <value>如果某个打开的程序与此进程关联，则会关闭此程序并且将丢失所有未保存的数据。如果结束某个系统进程，则可能导致系统不稳定。你确定要继续吗 ?</value>
+    <value>開いているプログラムがこのプロセスに関連付けられている場合、プログラムが閉じられ、保存されていないデータはすべて失われます。システムプロセスを終了するとシステムが不安定になる可能性があります。続行しますか？</value>
   </data>
   <data name="KillAskEnd" xml:space="preserve">
-    <value>吗？</value>
+    <value>を終了しますか？</value>
   </data>
   <data name="KillAskStart" xml:space="preserve">
-    <value>你希望结束</value>
+    <value>終了しますか:</value>
   </data>
   <data name="KillFailed" xml:space="preserve">
-    <value>无法结束进程</value>
+    <value>プロセスを終了できません</value>
   </data>
   <data name="OpFailed" xml:space="preserve">
-    <value>无法完成此操作</value>
+    <value>この操作を完了できません</value>
   </data>
   <data name="Address" xml:space="preserve">
-    <value>地址</value>
+    <value>アドレス</value>
   </data>
   <data name="BelongThread" xml:space="preserve">
-    <value>所属线程</value>
+    <value>所属スレッド</value>
   </data>
   <data name="CantCopyFile" xml:space="preserve">
-    <value>无法复制文件</value>
+    <value>ファイルをコピーできません</value>
   </data>
   <data name="CantGetPath" xml:space="preserve">
-    <value>无法获取路径。</value>
+    <value>パスを取得できません。</value>
   </data>
   <data name="CantMoveFile" xml:space="preserve">
-    <value>无法移动文件</value>
+    <value>ファイルを移動できません</value>
   </data>
   <data name="ChooseTargetDir" xml:space="preserve">
-    <value>选择目标文件夹</value>
+    <value>対象フォルダーを選択</value>
   </data>
   <data name="ContextSwitch" xml:space="preserve">
-    <value>切换次数</value>
+    <value>コンテキストスイッチ数</value>
   </data>
   <data name="Copying" xml:space="preserve">
-    <value>正在复制文件……</value>
+    <value>ファイルをコピー中……</value>
   </data>
   <data name="DelAsk1" xml:space="preserve">
-    <value>真的要删除这个文件？</value>
+    <value>このファイルを削除しますか？</value>
   </data>
   <data name="DelAsk2" xml:space="preserve">
-    <value>真的要删除这 %d 个文件？</value>
+    <value>これら %d 個のファイルを削除しますか？</value>
   </data>
   <data name="DelAsk3" xml:space="preserve">
-    <value>真的要删除这个文件夹？</value>
+    <value>このフォルダーを削除しますか？</value>
   </data>
   <data name="DeleteIng" xml:space="preserve">
-    <value>删除中……</value>
+    <value>削除中……</value>
   </data>
   <data name="DelFailed" xml:space="preserve">
-    <value>删除失败</value>
+    <value>削除に失敗しました</value>
   </data>
   <data name="DelSure" xml:space="preserve">
-    <value>删除确认</value>
+    <value>削除の確認</value>
   </data>
   <data name="EndProcFailed" xml:space="preserve">
-    <value>无法结束进程</value>
+    <value>プロセスを終了できません</value>
   </data>
   <data name="EntryPoint" xml:space="preserve">
-    <value>入口点</value>
+    <value>エントリポイント</value>
   </data>
   <data name="EnumModuleFailed" xml:space="preserve">
-    <value>无法枚举模块</value>
+    <value>モジュールを列挙できません</value>
   </data>
   <data name="EnumThreadFailed" xml:space="preserve">
-    <value>枚举线程失败</value>
+    <value>スレッドの列挙に失敗しました</value>
   </data>
   <data name="FileExist" xml:space="preserve">
-    <value>文件已经存在</value>
+    <value>ファイルは既に存在します</value>
   </data>
   <data name="FileExist2" xml:space="preserve">
-    <value>文件已经存在，覆盖吗？</value>
+    <value>ファイルは既に存在します。上書きしますか？</value>
   </data>
   <data name="FreeLibSuccess" xml:space="preserve">
-    <value>卸载模块成功。</value>
+    <value>モジュールのアンロードに成功しました。</value>
   </data>
   <data name="MenuRebootAsAdmin" xml:space="preserve">
-    <value>以管理员模式重启程序</value>
+    <value>管理者として再起動</value>
   </data>
   <data name="ModuleName" xml:space="preserve">
-    <value>模块名</value>
+    <value>モジュール名</value>
   </data>
   <data name="ModulePath" xml:space="preserve">
-    <value>模块路径</value>
+    <value>モジュールパス</value>
   </data>
   <data name="Moveing" xml:space="preserve">
-    <value>正在移动文件……</value>
+    <value>ファイルを移動中……</value>
   </data>
   <data name="NoAdminTipText" xml:space="preserve">
-    <value>请在刚才的对话框中选择”是“或者”确定“来赋予本程序管理员权限。</value>
+    <value>先ほどのダイアログで「はい」または「OK」を選択して、このプログラムに管理者権限を付与してください。</value>
   </data>
   <data name="NoAdminTipTitle" xml:space="preserve">
-    <value>您拒绝了权限赋予。</value>
+    <value>権限の付与を拒否しました。</value>
   </data>
   <data name="OpenProcFailed" xml:space="preserve">
-    <value>无法打开进程</value>
+    <value>プロセスを開けません</value>
   </data>
   <data name="Priority" xml:space="preserve">
-    <value>优先级</value>
+    <value>優先度</value>
   </data>
   <data name="ResProcFailed" xml:space="preserve">
-    <value>无法继续进程运行</value>
+    <value>プロセスの再開に失敗しました</value>
   </data>
   <data name="Size" xml:space="preserve">
-    <value>大小</value>
+    <value>サイズ</value>
   </data>
   <data name="State" xml:space="preserve">
-    <value>状态</value>
+    <value>状態</value>
   </data>
   <data name="SusProcFailed" xml:space="preserve">
-    <value>无法暂停进程运行</value>
+    <value>プロセスの一時停止に失敗しました</value>
   </data>
   <data name="TitleQuestion" xml:space="preserve">
-    <value>疑问</value>
+    <value>確認</value>
   </data>
   <data name="Visible" xml:space="preserve">
-    <value>可见</value>
+    <value>表示</value>
   </data>
   <data name="VModulTitle" xml:space="preserve">
-    <value>进程 %s [%d] 的所有模块：%d</value>
+    <value>プロセス %s [%d] の全モジュール：%d</value>
   </data>
   <data name="VThreadTitle" xml:space="preserve">
-    <value>进程 %s [%d] 的所有线程：%d</value>
+    <value>プロセス %s [%d] の全スレッド：%d</value>
   </data>
   <data name="VWinTitle" xml:space="preserve">
-    <value>进程 %s [%d] 的所有窗口：%d</value>
+    <value>プロセス %s [%d] の全ウィンドウ：%d</value>
   </data>
   <data name="WindowClassName" xml:space="preserve">
-    <value>窗口类名</value>
+    <value>ウィンドウクラス名</value>
   </data>
   <data name="WindowHandle" xml:space="preserve">
-    <value>窗口句柄</value>
+    <value>ウィンドウハンドル</value>
   </data>
   <data name="WindowText" xml:space="preserve">
-    <value>窗口文字</value>
+    <value>ウィンドウテキスト</value>
   </data>
   <data name="FreeFailed" xml:space="preserve">
-    <value>卸载模块错误</value>
+    <value>モジュールのアンロードエラー</value>
   </data>
   <data name="FreeInvalidProc" xml:space="preserve">
-    <value>无法Free模块，进程已退出。</value>
+    <value>モジュールを解放できません。プロセスは終了しています。</value>
   </data>
   <data name="InvThread" xml:space="preserve">
-    <value>无效线程。</value>
+    <value>無効なスレッド。</value>
   </data>
   <data name="KernelNotLoad" xml:space="preserve">
-    <value>内核没有启动。</value>
+    <value>カーネルが起動していません。</value>
   </data>
   <data name="KillThreadError" xml:space="preserve">
-    <value>无法结束线程</value>
+    <value>スレッドを終了できません</value>
   </data>
   <data name="KillThreadInvThread" xml:space="preserve">
-    <value>无法结束线程，无效线程。</value>
+    <value>スレッドを終了できません。無効なスレッドです。</value>
   </data>
   <data name="OpenThreadFailed" xml:space="preserve">
-    <value>无法打开线程</value>
+    <value>スレッドを開けません</value>
   </data>
   <data name="ReThreadErr" xml:space="preserve">
-    <value>无法继续线程运行</value>
+    <value>スレッドの再開に失敗しました</value>
   </data>
   <data name="SuThreadErr" xml:space="preserve">
-    <value>无法挂起线程</value>
+    <value>スレッドを一時停止できません</value>
   </data>
   <data name="SuThreadWarn" xml:space="preserve">
-    <value>不建议强制挂起线程，因为挂起线程极易发生死锁等其他问题，如果您不是在调试程序，请不要使用该方法。
-那么，确定强制挂起线程？</value>
+    <value>スレッドを強制的に一時停止することは推奨されません。デッドロックなどの問題が発生しやすくなります。デバッグ中でない場合は使用しないでください。
+強制的にスレッドを一時停止しますか？</value>
   </data>
   <data name="ChangeWindowTextAsk" xml:space="preserve">
-    <value>您更改了窗口文字，要把文字设置到窗口上吗？</value>
+    <value>ウィンドウテキストを変更しました。ウィンドウに適用しますか？</value>
   </data>
   <data name="InvalidHwnd" xml:space="preserve">
-    <value>无效窗口。</value>
+    <value>無効なウィンドウ。</value>
   </data>
   <data name="RefeshSuccess" xml:space="preserve">
-    <value>刷新成功。</value>
+    <value>更新しました。</value>
   </data>
   <data name="ChangeWindowTextAsk1" xml:space="preserve">
-    <value>您更改了窗口文字，要把文字设置到窗口上吗？</value>
+    <value>ウィンドウテキストを変更しました。ウィンドウに適用しますか？</value>
   </data>
   <data name="ActiveTime" xml:space="preserve">
-    <value>活动时间</value>
+    <value>アクティブ時間</value>
   </data>
   <data name="Cache" xml:space="preserve">
-    <value>缓存：</value>
+    <value>キャッシュ：</value>
   </data>
   <data name="Cached" xml:space="preserve">
-    <value>已缓存</value>
+    <value>キャッシュ済み</value>
   </data>
   <data name="CpuCpunt" xml:space="preserve">
-    <value>逻辑处理器：</value>
+    <value>論理プロセッサー：</value>
   </data>
   <data name="CpuPackageCount" xml:space="preserve">
-    <value>内核：</value>
+    <value>コア：</value>
   </data>
   <data name="HandleCount" xml:space="preserve">
-    <value>句柄数</value>
+    <value>ハンドル数</value>
   </data>
   <data name="MaxSpeed" xml:space="preserve">
     <value>最大速度：</value>
   </data>
   <data name="MemUsing" xml:space="preserve">
-    <value>使用中 (已压缩)</value>
+    <value>使用中（圧縮済み）</value>
   </data>
   <data name="MenCanUse" xml:space="preserve">
-    <value>可用内存</value>
+    <value>使用可能なメモリ</value>
   </data>
   <data name="NonPagedPool" xml:space="preserve">
-    <value>非分页缓冲池</value>
+    <value>非ページプール</value>
   </data>
   <data name="PagedPool" xml:space="preserve">
-    <value>分页缓冲池</value>
+    <value>ページプール</value>
   </data>
   <data name="QueueTime" xml:space="preserve">
-    <value>队列时间</value>
+    <value>キュー時間</value>
   </data>
   <data name="ReadSpeed" xml:space="preserve">
-    <value>读取速度</value>
+    <value>読み取り速度</value>
   </data>
   <data name="Receive" xml:space="preserve">
-    <value>接收</value>
+    <value>受信</value>
   </data>
   <data name="RunTime" xml:space="preserve">
-    <value>正常运行时间</value>
+    <value>稼働時間</value>
   </data>
   <data name="Send" xml:space="preserve">
-    <value>发送</value>
+    <value>送信</value>
   </data>
   <data name="Submited" xml:space="preserve">
-    <value>已提交</value>
+    <value>コミット済み</value>
   </data>
   <data name="ThreadCount" xml:space="preserve">
-    <value>线程数</value>
+    <value>スレッド数</value>
   </data>
   <data name="Useage" xml:space="preserve">
-    <value>利用率</value>
+    <value>使用率</value>
   </data>
   <data name="WriteSpeed" xml:space="preserve">
-    <value>写入速度</value>
+    <value>書き込み速度</value>
   </data>
   <data name="DelStartupItemAsk" xml:space="preserve">
-    <value>删除此启动项以不可恢复，您需要确定此启动项不是系统必须，否则删除可能会对您的系统造成无法正常运行的问题。</value>
+    <value>このスタートアップ項目は元に戻せない形で削除されます。システムに必要な項目でないことを確認してください。削除するとシステムが正常に動作しなくなる可能性があります。</value>
   </data>
   <data name="DelStartupItemAsk2" xml:space="preserve">
-    <value>删除此启动项以及文件不可恢复，您需要确定此文件不是系统必须文件，否则删除可能会对您的系统造成破坏。</value>
+    <value>このスタートアップ項目およびファイルは元に戻せない形で削除されます。システムファイルでないことを確認してください。削除するとシステムが破損する可能性があります。</value>
   </data>
   <data name="TitleEProcess" xml:space="preserve">
     <value>EPROCESS</value>
   </data>
   <data name="LoadDriverErr" xml:space="preserve">
-    <value>加载驱动失败！</value>
+    <value>ドライバーの読み込みに失敗しました！</value>
   </data>
   <data name="FroceDelSuccess" xml:space="preserve">
-    <value>强制删除成功</value>
+    <value>強制削除に成功しました</value>
   </data>
   <data name="FillFileFailed" xml:space="preserve">
-    <value>填充文件失败</value>
+    <value>ファイルの充填に失敗しました</value>
   </data>
   <data name="FillFileNeedSize" xml:space="preserve">
-    <value>填充文件的大小不能为 0 ！</value>
+    <value>ファイルサイズを 0 にはできません！</value>
   </data>
   <data name="FillFileSuccess" xml:space="preserve">
-    <value>填充文件成功</value>
+    <value>ファイルの充填に成功しました</value>
   </data>
   <data name="GetFileInfoFailed" xml:space="preserve">
-    <value>获取文件信息失败</value>
+    <value>ファイル情報の取得に失敗しました</value>
   </data>
   <data name="OpSuccess" xml:space="preserve">
-    <value>操作成功</value>
+    <value>操作に成功しました</value>
   </data>
   <data name="UnlockFileFailed" xml:space="preserve">
-    <value>解除文件占用失败</value>
+    <value>ファイルのロック解除に失敗しました</value>
   </data>
   <data name="UnlockFileSuccess" xml:space="preserve">
-    <value>解除文件占用成功</value>
+    <value>ファイルのロックを解除しました</value>
   </data>
   <data name="CollectingFiles" xml:space="preserve">
-    <value>正在计算删除项目...</value>
+    <value>削除対象を計算中...</value>
   </data>
   <data name="DeleteFiles" xml:space="preserve">
-    <value>正在删除...</value>
+    <value>削除中...</value>
   </data>
   <data name="VHandleTitle" xml:space="preserve">
-    <value>进程 {0} [{1}] 的所有句柄：{2}</value>
+    <value>プロセス {0} [{1}] の全ハンドル：{2}</value>
   </data>
   <data name="KillOldFailed" xml:space="preserve">
-    <value>上一个 PCMgr 无法结束，您可以手动结束它</value>
+    <value>前のPCMgrを終了できません。手動で終了してください</value>
   </data>
   <data name="KillOldSuccess" xml:space="preserve">
-    <value>上一个 PCMgr 已经成功结束</value>
+    <value>前のPCMgrを正常に終了しました</value>
   </data>
   <data name="Run2KillOld" xml:space="preserve">
-    <value>强制结束上一个 PCMgr</value>
+    <value>前のPCMgrを強制終了</value>
   </data>
   <data name="Run2WarnText" xml:space="preserve">
-    <value>检测到您已经运行一个 PCMgr , 运行多个 PCMgr 可能导致软件功能异常，是否继续运行？
-如果上一个程序卡死或者无响应，您也可以选择强制结束上一个进程。</value>
+    <value>PCMgrが既に実行中です。複数起動するとソフトウェアの機能が正常に動作しない可能性があります。続行しますか？
+前のプログラムが応答しない場合は、強制終了することもできます。</value>
   </data>
   <data name="LoadDriver" xml:space="preserve">
-    <value>加载内核驱动</value>
+    <value>カーネルドライバーを読み込み</value>
   </data>
   <data name="UnLoadDriver" xml:space="preserve">
-    <value>卸载内核驱动</value>
+    <value>カーネルドライバーをアンロード</value>
   </data>
   <data name="TitleFRebbot" xml:space="preserve">
-    <value>确定强制重启？您未保存的工作将会丢失！</value>
+    <value>強制再起動しますか？保存されていない作業は失われます！</value>
   </data>
   <data name="TitleFShutdown" xml:space="preserve">
-    <value>确定强制关机？您未保存的工作将会丢失！</value>
+    <value>強制シャットダウンしますか？保存されていない作業は失われます！</value>
   </data>
   <data name="PleaseChooseDriver" xml:space="preserve">
-    <value>请输入一个驱动路径或选择一个驱动！</value>
+    <value>ドライバーパスを入力するか、ドライバーを選択してください！</value>
   </data>
   <data name="DriverLoadFailed" xml:space="preserve">
-    <value>驱动加载失败。Lset Error : {0} . 更多信息请查看调试输出窗口。</value>
+    <value>ドライバーの読み込みに失敗しました。Lset Error: {0}。詳細はデバッグ出力ウィンドウを確認してください。</value>
   </data>
   <data name="DriverLoadSuccessFull" xml:space="preserve">
-    <value>驱动加载成功。</value>
+    <value>ドライバーを読み込みました。</value>
   </data>
   <data name="DriverUnLoadFailed" xml:space="preserve">
-    <value>驱动卸载失败。Lset Error : {0} . 更多信息请查看调试输出窗口。</value>
+    <value>ドライバーのアンロードに失敗しました。Lset Error: {0}。詳細はデバッグ出力ウィンドウを確認してください。</value>
   </data>
   <data name="DriverUnLoadSuccessFull" xml:space="preserve">
-    <value>驱动卸载成功。</value>
+    <value>ドライバーをアンロードしました。</value>
   </data>
   <data name="PleaseEnterDriverServiceName" xml:space="preserve">
-    <value>请输入驱动刚才加载的服务名</value>
+    <value>読み込んだドライバーのサービス名を入力してください</value>
   </data>
   <data name="DriverCount" xml:space="preserve">
-    <value>驱动数：</value>
+    <value>ドライバー数：</value>
   </data>
   <data name="FileNotExist" xml:space="preserve">
-    <value>文件不存在</value>
+    <value>ファイルが存在しません</value>
   </data>
   <data name="FileNotTrust" xml:space="preserve">
-    <value>文件没有签名</value>
+    <value>ファイルに署名がありません</value>
   </data>
   <data name="FileTrust" xml:space="preserve">
-    <value>文件已经签名</value>
+    <value>ファイルに署名があります</value>
   </data>
   <data name="DriverCountLoaded" xml:space="preserve">
-    <value>其中已加载：</value>
+    <value>読み込み済み：</value>
   </data>
   <data name="TitleFilePath" xml:space="preserve">
-    <value>文件路径</value>
+    <value>ファイルパス</value>
   </data>
   <data name="TitleRegPath" xml:space="preserve">
-    <value>注册表路径</value>
+    <value>レジストリパス</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>任务管理器</value>
+    <value>タスクマネージャー</value>
   </data>
   <data name="FileTrustViewCrt" xml:space="preserve">
-    <value>&lt;A HREF="#"&gt;查看证书&lt;/A&gt;</value>
+    <value>&lt;A HREF="#"&gt;証明書を表示&lt;/A&gt;</value>
   </data>
   <data name="FunCreateing" xml:space="preserve">
-    <value>功能正在开发中，敬请期待！</value>
+    <value>この機能は開発中です。お楽しみに！</value>
   </data>
   <data name="PleaseEnterDaSize" xml:space="preserve">
-    <value>请输入反汇编大小</value>
+    <value>逆アセンブルサイズを入力してください</value>
   </data>
   <data name="PleaseEnterTargetAddress" xml:space="preserve">
-    <value>请输入目标地址</value>
+    <value>ターゲットアドレスを入力してください</value>
   </data>
   <data name="DblClickToDa" xml:space="preserve">
-    <value>反汇编大小过大，双击此条目继续反汇编</value>
+    <value>逆アセンブルサイズが大きすぎます。このエントリをダブルクリックして続行します</value>
   </data>
   <data name="OpenServiceError" xml:space="preserve">
-    <value>打开服务失败</value>
+    <value>サービスを開けません</value>
   </data>
   <data name="ChangeScStartTypeFailed" xml:space="preserve">
-    <value>无法改变服务设置</value>
+    <value>サービス設定を変更できません</value>
   </data>
   <data name="DelScError" xml:space="preserve">
-    <value>无法删除服务</value>
+    <value>サービスを削除できません</value>
   </data>
   <data name="NoPDBWarn" xml:space="preserve">
-    <value>无法下载或加载 {0} 的符号文件</value>
+    <value>{0} のシンボルファイルをダウンロードまたは読み込めません</value>
   </data>
   <data name="NoPDBWarnText" xml:space="preserve">
-    <value>我们需要  {0} 的pdb文件才能对内核进行分析，发挥出软件的所有功能。因此，内核的部分功能将被禁用。
-您也可以尝试用WinDbg来下载 {1} 的符号文件，然后将其复制到本软件目录\symbols文件夹下，我们将会自动加载。</value>
+    <value>{0} のPDBファイルがカーネル解析に必要です。カーネルの一部機能が無効になります。
+WinDbgを使用して {1} のシンボルファイルをダウンロードし、ソフトウェアディレクトリの\symbolsフォルダーに配置すると自動的に読み込まれます。</value>
   </data>
   <data name="LoadDriverErrNeed64" xml:space="preserve">
-    <value>需要 64 位的程序来加载内核驱动</value>
+    <value>カーネルドライバーの読み込みには64ビット版が必要です</value>
   </data>
   <data name="LoadDriverErrNeed64Text" xml:space="preserve">
-    <value>在 64 位系统中 PC Manager 需要 以 64 位模式运行才能正确加载驱动并调用内核。
-因此，内核功能不可用，如果您需要使用内核功能，请切换至 64 位PC Manager 程序</value>
+    <value>64ビットシステムでPCManagerがカーネルドライバーを正しく読み込むには、64ビットモードで実行する必要があります。
+そのため、カーネル機能は利用できません。カーネル機能を使用するには64ビット版のPCManagerに切り替えてください</value>
   </data>
   <data name="KillAskContentImporant" xml:space="preserve">
-    <value>结束此进程将导致 Windows 不稳定或关闭，从而导致丢失所有未保存的数据。你确定要继续吗?</value>
+    <value>このプロセスを終了するとWindowsが不安定になるか、シャットダウンし、保存されていないデータがすべて失われます。続行しますか？</value>
   </data>
   <data name="KillAskImporantGiveup" xml:space="preserve">
-    <value>放弃未保存的数据并关闭。</value>
+    <value>保存されていないデータを破棄して閉じます。</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>取消</value>
+    <value>キャンセル</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>关闭</value>
+    <value>閉じる</value>
   </data>
   <data name="KillAskContentVeryImporant" xml:space="preserve">
-    <value>请注意，强制结束此进程将导致系统立即奔溃！</value>
+    <value>警告: このプロセスを強制終了するとシステムが即座にクラッシュします！</value>
   </data>
   <data name="SuspendEnd" xml:space="preserve">
-    <value>的运行吗？</value>
+    <value>の実行を</value>
   </data>
   <data name="SuspendStart" xml:space="preserve">
-    <value>你确定要暂停</value>
+    <value>一時停止しますか:</value>
   </data>
   <data name="SuspendVeryImporantWarnContent" xml:space="preserve">
-    <value>强制暂停此进程运行将导致 Windows 立即奔溃！</value>
+    <value>このプロセスを強制的に一時停止するとWindowsが即座にクラッシュします！</value>
   </data>
   <data name="SuspendWarnContent" xml:space="preserve">
-    <value>强制暂停此进程运行将导致 Windows 不稳定或关闭，从而导致丢失所有未保存的数据。你确定要继续吗?</value>
+    <value>このプロセスを強制的に一時停止するとWindowsが不安定になるか、シャットダウンし、保存されていないデータがすべて失われます。続行しますか？</value>
   </data>
   <data name="TitleVeryWarn" xml:space="preserve">
-    <value>重要警告</value>
+    <value>重要な警告</value>
   </data>
   <data name="DblCklShow_EPROCESS" xml:space="preserve">
-    <value>双击此条目显示进程 _EPROCESS</value>
+    <value>このエントリをダブルクリックしてプロセスの _EPROCESS を表示</value>
   </data>
   <data name="DblCklShow_KPROCESS" xml:space="preserve">
-    <value>双击此条目显示进程 _KPROCESS</value>
+    <value>このエントリをダブルクリックしてプロセスの _KPROCESS を表示</value>
   </data>
   <data name="DblCklShow_PEB" xml:space="preserve">
-    <value>双击此条目显示进程 _PEB</value>
+    <value>このエントリをダブルクリックしてプロセスの _PEB を表示</value>
   </data>
   <data name="DblCklShow_RTL_USER_PROCESS_PARAMETERS" xml:space="preserve">
-    <value>双击此条目显示进程 _RTL_USER_PROCESS_PARAMETERS</value>
+    <value>このエントリをダブルクリックしてプロセスの _RTL_USER_PROCESS_PARAMETERS を表示</value>
   </data>
   <data name="CantFind" xml:space="preserve">
-    <value>无法找到：</value>
+    <value>見つかりません:</value>
   </data>
   <data name="Capacity" xml:space="preserve">
     <value>容量</value>
   </data>
   <data name="Formatted" xml:space="preserve">
-    <value>已格式化</value>
+    <value>フォーマット済み</value>
   </data>
   <data name="IsSystemDir" xml:space="preserve">
-    <value>系统磁盘</value>
+    <value>システムドライブ</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>否</value>
+    <value>いいえ</value>
   </data>
   <data name="PageFile" xml:space="preserve">
-    <value>页面文件</value>
+    <value>ページファイル</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>是</value>
+    <value>はい</value>
   </data>
   <data name="Speed" xml:space="preserve">
     <value>速度</value>
   </data>
   <data name="SetTo" xml:space="preserve">
-    <value>切换到(&amp;T)</value>
+    <value>切り替え(&amp;T)</value>
   </data>
   <data name="KillTreeAskEnd" xml:space="preserve">
-    <value>的进程树吗?</value>
+    <value>のプロセスツリーを終了しますか？</value>
   </data>
   <data name="KillTreeContent" xml:space="preserve">
-    <value>如果多个打开的程序或进程与此进程树关联，则会关闭这些程序或进程并且将丢失所有未保存的数据。如果结束某个系统进程，则可能导致系统不稳定。你确定要继续吗?</value>
+    <value>複数のプログラムまたはプロセスがこのプロセスツリーに関連している場合、それらが閉じられ、保存されていないデータはすべて失われます。システムプロセスを終了するとシステムが不安定になる可能性があります。続行しますか？</value>
   </data>
   <data name="TitleCommited" xml:space="preserve">
-    <value>提交大小</value>
+    <value>コミットサイズ</value>
   </data>
   <data name="TitleCPUTime" xml:space="preserve">
-    <value>CPU时间</value>
+    <value>CPU時間</value>
   </data>
   <data name="TitleDEP" xml:space="preserve">
-    <value>数据执行保护</value>
+    <value>データ実行防止</value>
   </data>
   <data name="TitleGdiObject" xml:space="preserve">
-    <value>GDI对象</value>
+    <value>GDIオブジェクト</value>
   </data>
   <data name="TitleGPU" xml:space="preserve">
     <value>GPU</value>
   </data>
   <data name="TitleGPUEngine" xml:space="preserve">
-    <value>GPU 引擎</value>
+    <value>GPUエンジン</value>
   </data>
   <data name="TitleGPUPrivateMemory" xml:space="preserve">
-    <value>专用 GPU 内存</value>
+    <value>専用GPUメモリ</value>
   </data>
   <data name="TitleGPUShareMemory" xml:space="preserve">
-    <value>共享 GPU 内存</value>
+    <value>共有GPUメモリ</value>
   </data>
   <data name="TitleHandleCount" xml:space="preserve">
-    <value>句柄数</value>
+    <value>ハンドル数</value>
   </data>
   <data name="TitleIOOther" xml:space="preserve">
-    <value>I/O 其他</value>
+    <value>I/Oその他</value>
   </data>
   <data name="TitleIOOtherBytes" xml:space="preserve">
-    <value>I/O 其他字节</value>
+    <value>I/Oその他バイト</value>
   </data>
   <data name="TitleIORead" xml:space="preserve">
-    <value>I/O 读取</value>
+    <value>I/O読み取り</value>
   </data>
   <data name="TitleIOReadBytes" xml:space="preserve">
-    <value>I/O 写入字节</value>
+    <value>I/O書き込みバイト</value>
   </data>
   <data name="TitleIOWrite" xml:space="preserve">
-    <value>I/O 写入</value>
+    <value>I/O書き込み</value>
   </data>
   <data name="TitleIOWriteBytes" xml:space="preserve">
-    <value>I/O 读取字节</value>
+    <value>I/O読み取りバイト</value>
   </data>
   <data name="TitleJobID" xml:space="preserve">
-    <value>作业对象ID</value>
+    <value>ジョブオブジェクトID</value>
   </data>
   <data name="TitleNonPagedPool" xml:space="preserve">
-    <value>非分页缓冲池</value>
+    <value>非ページプール</value>
   </data>
   <data name="TitleOperationSystemContext" xml:space="preserve">
-    <value>操作系统上下文</value>
+    <value>オペレーティングシステムのコンテキスト</value>
   </data>
   <data name="TitlePackageName" xml:space="preserve">
-    <value>程序包名称</value>
+    <value>パッケージ名</value>
   </data>
   <data name="TitlePagedError" xml:space="preserve">
-    <value>页面错误</value>
+    <value>ページエラー</value>
   </data>
   <data name="TitlePagedErrorCrease" xml:space="preserve">
-    <value>页面错误增量</value>
+    <value>ページエラー増分</value>
   </data>
   <data name="TitlePagedPool" xml:space="preserve">
-    <value>分页缓冲池</value>
+    <value>ページプール</value>
   </data>
   <data name="TitlePeakWorkingSet" xml:space="preserve">
-    <value>峰值工作集(内存)</value>
+    <value>ピーク作業セット（メモリ）</value>
   </data>
   <data name="TitlePlatform" xml:space="preserve">
-    <value>平台</value>
+    <value>プラットフォーム</value>
   </data>
   <data name="TitlePriority" xml:space="preserve">
-    <value>基本优先级</value>
+    <value>基本優先度</value>
   </data>
   <data name="TitlePrivilege" xml:space="preserve">
-    <value>特权</value>
+    <value>特権</value>
   </data>
   <data name="TitleSessionID" xml:space="preserve">
-    <value>会话ID</value>
+    <value>セッションID</value>
   </data>
   <data name="TitleThreadCount" xml:space="preserve">
-    <value>线程数</value>
+    <value>スレッド数</value>
   </data>
   <data name="TitleUACVirtualization" xml:space="preserve">
-    <value>UAC虚拟化</value>
+    <value>UACの仮想化</value>
   </data>
   <data name="TitleUserName" xml:space="preserve">
-    <value>用户名</value>
+    <value>ユーザー名</value>
   </data>
   <data name="TitleUserObject" xml:space="preserve">
-    <value>用户对象</value>
+    <value>ユーザーオブジェクト</value>
   </data>
   <data name="TitleWorkingSet" xml:space="preserve">
-    <value>工作集设置(内存)</value>
+    <value>作業セット（メモリ）</value>
   </data>
   <data name="TitleWorkingSetCrease" xml:space="preserve">
-    <value>工作集增量(内存)</value>
+    <value>作業セット増分（メモリ）</value>
   </data>
   <data name="TitleWorkingSetPrivate" xml:space="preserve">
-    <value>专用工作集(内存)</value>
+    <value>専用作業セット（メモリ）</value>
   </data>
   <data name="TitleWorkingSetShare" xml:space="preserve">
-    <value>共享工作集(内存)</value>
+    <value>共有作業セット（メモリ）</value>
   </data>
   <data name="MaxShow16Item" xml:space="preserve">
-    <value>您最多只能选择16个项目显示哦</value>
+    <value>表示できる項目は最大16個です</value>
   </data>
   <data name="Process64Bit" xml:space="preserve">
-    <value>64位</value>
+    <value>64ビット</value>
   </data>
   <data name="TitleParentPID" xml:space="preserve">
-    <value>父 PID</value>
+    <value>親PID</value>
   </data>
   <data name="TitleCycle" xml:space="preserve">
-    <value>周期</value>
+    <value>サイクル</value>
   </data>
   <data name="TitleUserPrivilege" xml:space="preserve">
-    <value>用户权限</value>
+    <value>ユーザー権限</value>
   </data>
   <data name="TitleID" xml:space="preserve">
     <value>ID</value>
   </data>
   <data name="TitleDomainName" xml:space="preserve">
-    <value>主机名</value>
+    <value>ホスト名</value>
   </data>
   <data name="WantDisconnectUser" xml:space="preserve">
-    <value>你希望与此用户断开连接吗？</value>
+    <value>このユーザーとの接続を切断しますか？</value>
   </data>
   <data name="WantLogooffUser" xml:space="preserve">
-    <value>你希望注销此用户吗？</value>
+    <value>このユーザーをサインアウトしますか？</value>
   </data>
   <data name="PleaseEnterPassword" xml:space="preserve">
-    <value>请输入此用户的密码</value>
+    <value>このユーザーのパスワードを入力してください</value>
   </data>
   <data name="ConnectSession" xml:space="preserve">
-    <value>连接会话</value>
+    <value>セッションに接続</value>
   </data>
   <data name="ConnectSessionFailed" xml:space="preserve">
-    <value>无法连接会话</value>
+    <value>セッションに接続できません</value>
   </data>
   <data name="DisConnectSession" xml:space="preserve">
-    <value>断开连接</value>
+    <value>接続を切断</value>
   </data>
   <data name="DisConnectSessionFailed" xml:space="preserve">
-    <value>无法断开会话的连接</value>
+    <value>セッションの接続を切断できません</value>
   </data>
   <data name="DisConnectSessionFailed1" xml:space="preserve">
-    <value>无法注销会话</value>
+    <value>セッションをサインアウトできません</value>
   </data>
   <data name="LogoffSession" xml:space="preserve">
-    <value>注销会话</value>
+    <value>セッションをサインアウト</value>
   </data>
   <data name="SetProcAffinityFailed" xml:space="preserve">
-    <value>设置进程相关性错误</value>
+    <value>プロセスのアフィニティ設定エラー</value>
   </data>
   <data name="SetProcPriorityClassFailed" xml:space="preserve">
-    <value>设置进程优先级错误</value>
+    <value>プロセスの優先度設定エラー</value>
   </data>
   <data name="AllowWhatCpusToRun" xml:space="preserve">
-    <value>允许哪些处理器运行</value>
+    <value>実行するプロセッサーの選択</value>
   </data>
   <data name="Model" xml:space="preserve">
-    <value>型号</value>
+    <value>モデル</value>
   </data>
   <data name="DeviceLocator" xml:space="preserve">
-    <value>已使用的插槽</value>
+    <value>使用中のスロット</value>
   </data>
   <data name="FormFactor" xml:space="preserve">
-    <value>规格</value>
+    <value>フォームファクター</value>
   </data>
   <data name="MemFree" xml:space="preserve">
-    <value>可用</value>
+    <value>利用可能</value>
   </data>
   <data name="MemModifed" xml:space="preserve">
-    <value>已修改</value>
+    <value>変更済み</value>
   </data>
   <data name="MemStandby" xml:space="preserve">
-    <value>备用</value>
+    <value>スタンバイ</value>
   </data>
   <data name="MemUsingS" xml:space="preserve">
     <value>使用中</value>
   </data>
   <data name="MemTipFree" xml:space="preserve">
-    <value>可用 ({0})
-当前未使用但会在进程、驱动程序或操作系统
-需要更多内存时首先重新使用的内存</value>
+    <value>利用可能 ({0})
+現在は未使用ですが、プロセス、ドライバー、またはオペレーティングシステムがより多くのメモリを必要とする場合に最初に再利用されるメモリ</value>
   </data>
   <data name="MemTipModifed" xml:space="preserve">
-    <value>已修改 ({0})
-内容必须先写入磁盘才能用于其他用途的内存</value>
+    <value>変更済み ({0})
+他の用途に使用する前にディスクに書き込む必要があるメモリ</value>
   </data>
   <data name="MemTipStandby" xml:space="preserve">
-    <value>备用 ({0})
-包含未频繁使用的缓存数据和代码的内存</value>
+    <value>スタンバイ ({0})
+頻繁に使用されないキャッシュデータおよびコードを含むメモリ</value>
   </data>
   <data name="MemTipUsing" xml:space="preserve">
     <value>使用中 ({0})
-由进程、驱动程序或操作系统使用的内存
+プロセス、ドライバー、またはオペレーティングシステムによって使用されているメモリ
 
-使用中，已压缩({1})
-压缩内存存储了估计 {2} 的数据，为系统节省了 {3} 的内存</value>
+使用中、圧縮済み ({1})
+圧縮メモリにはおよそ {2} のデータが格納されており、{3} のメモリを節約しています</value>
   </data>
   <data name="IPV4" xml:space="preserve">
-    <value>IPv4 地址</value>
+    <value>IPv4アドレス</value>
   </data>
   <data name="IPV6" xml:space="preserve">
-    <value>IPv6 地址</value>
+    <value>IPv6アドレス</value>
   </data>
   <data name="AdapterName" xml:space="preserve">
-    <value>适配器名称</value>
+    <value>アダプター名</value>
   </data>
   <data name="ConnectType" xml:space="preserve">
-    <value>连接类型</value>
+    <value>接続の種類</value>
   </data>
   <data name="Ethernet" xml:space="preserve">
-    <value>以太网</value>
+    <value>イーサネット</value>
   </data>
   <data name="TipCPU" xml:space="preserve">
-    <value>所有内核的总处理器利用率</value>
+    <value>すべてのコアの合計プロセッサー使用率</value>
   </data>
   <data name="TipDisk" xml:space="preserve">
-    <value>所有物理驱动器的总利用率</value>
+    <value>すべての物理ドライブの合計使用率</value>
   </data>
   <data name="TipGPU" xml:space="preserve">
-    <value>所有 GPU 引擎的最高利用率</value>
+    <value>すべてのGPUエンジンの最大使用率</value>
   </data>
   <data name="TipNet" xml:space="preserve">
-    <value>当前主要网络上的网络利用率</value>
+    <value>現在のメインネットワークのネットワーク使用率</value>
   </data>
   <data name="TipRam" xml:space="preserve">
-    <value>单个进程保留的物理内存总量</value>
+    <value>単一のプロセスが占有する物理メモリの合計</value>
   </data>
   <data name="TitleType" xml:space="preserve">
-    <value>类型</value>
+    <value>種類</value>
   </data>
   <data name="TipCmdLine" xml:space="preserve">
-    <value>指定用于创建进程的完整命令行</value>
+    <value>プロセスの作成に使用した完全なコマンドライン</value>
   </data>
   <data name="TipCommitedSize" xml:space="preserve">
-    <value>操作系统为进程保留的虚拟内存量</value>
+    <value>オペレーティングシステムがプロセスのために予約した仮想メモリの量</value>
   </data>
   <data name="TipCPUTime" xml:space="preserve">
-    <value>进程启动后所用的处理器总时间(秒)</value>
+    <value>プロセスの起動後に使用したプロセッサーの合計時間（秒）</value>
   </data>
   <data name="TipCycle" xml:space="preserve">
-    <value>进程所消耗的 CPU 周期时间的当前百分比</value>
+    <value>プロセスが消費するCPUサイクル時間の現在の割合</value>
   </data>
   <data name="TipGDIObject" xml:space="preserve">
-    <value>进程使用的 GDI 对象数</value>
+    <value>プロセスが使用するGDIオブジェクト数</value>
   </data>
   <data name="TipHandleCount" xml:space="preserve">
-    <value>由进程打开的当前句柄数</value>
+    <value>プロセスが開いている現在のハンドル数</value>
   </data>
   <data name="TipIOOther" xml:space="preserve">
-    <value>进程自启动以来生成的非
-读取/写入 I/O 操作(例如控制功能)数</value>
+    <value>プロセスの起動以来生成された読み取り/書き込み以外の
+I/O操作（例:制御機能）の数</value>
   </data>
   <data name="TipIOOtherBytes" xml:space="preserve">
-    <value>进程在 I/O 操作(非读取/写入操作，例如控制功能)期间
-期间读取的总字节数数</value>
+    <value>プロセスが読み取り/書き込み以外のI/O操作（例:制御機能）中に
+読み取った総バイト数</value>
   </data>
   <data name="TipIORead" xml:space="preserve">
-    <value>进程自启动以来生成的读取 I/O 操作数</value>
+    <value>プロセスの起動以来生成された読み取りI/O操作数</value>
   </data>
   <data name="TipIOReadBytes" xml:space="preserve">
-    <value>进程在 I/O 操作期间读取的总字节数</value>
+    <value>プロセスがI/O操作中に読み取った総バイト数</value>
   </data>
   <data name="TipIOWrite" xml:space="preserve">
-    <value>进程自启动以来生成的写入 I/O 操作数</value>
+    <value>プロセスの起動以来生成された書き込みI/O操作数</value>
   </data>
   <data name="TipIOWriteBytes" xml:space="preserve">
-    <value>进程在 I/O 操作期间写入的总字节数</value>
+    <value>プロセスがI/O操作中に書き込んだ総バイト数</value>
   </data>
   <data name="TipJobID" xml:space="preserve">
-    <value>正在其中运行进程的作业对象</value>
+    <value>プロセスが実行中のジョブオブジェクト</value>
   </data>
   <data name="TipNonPagedSize" xml:space="preserve">
-    <value>由内核或驱动程序代表进程
-所分配的不可分页内核内存量</value>
+    <value>カーネルまたはドライバーがプロセスのために割り当てた
+非ページカーネルメモリの量</value>
   </data>
   <data name="TipPagedSize" xml:space="preserve">
-    <value>由内核或驱动程序代表进程
-所分配的可分页内核内存量</value>
+    <value>カーネルまたはドライバーがプロセスのために割り当てた
+ページ可能なカーネルメモリの量</value>
   </data>
   <data name="TipPageErr" xml:space="preserve">
-    <value>进程自启动以后生成的页面错误数</value>
+    <value>プロセスの起動以来生成されたページエラー数</value>
   </data>
   <data name="TipPID" xml:space="preserve">
-    <value>进程 ID</value>
+    <value>プロセスID</value>
   </data>
   <data name="TipPlatform" xml:space="preserve">
-    <value>进程运行的平台(32位 或 64位)</value>
+    <value>プロセスが実行されているプラットフォーム（32ビットまたは64ビット）</value>
   </data>
   <data name="TipPrivateWorkingSet" xml:space="preserve">
-    <value>由该进程使用而其他进程
-无法使用的物理内存量</value>
+    <value>このプロセスが使用しており、他のプロセスが
+使用できない物理メモリの量</value>
   </data>
   <data name="TipShareWorkingSet" xml:space="preserve">
-    <value>由该进程所使用并且
-可与其他进程共享的物理内存量</value>
+    <value>このプロセスが使用しており、
+他のプロセスと共有できる物理メモリの量</value>
   </data>
   <data name="TipStatus" xml:space="preserve">
-    <value>进程执行状态</value>
+    <value>プロセスの実行状態</value>
   </data>
   <data name="TipThredCount" xml:space="preserve">
-    <value>活动线程数</value>
+    <value>アクティブスレッド数</value>
   </data>
   <data name="TipUserObject" xml:space="preserve">
-    <value>由进程使用的窗口管理器对象
-(窗口、菜单、光标、键盘布局、监视器)数</value>
+    <value>プロセスが使用するウィンドウマネージャーオブジェクト
+（ウィンドウ、メニュー、カーソル、キーボードレイアウト、モニター）の数</value>
   </data>
   <data name="TipWorkingSet" xml:space="preserve">
-    <value>进程当前正在使用的物理内存量</value>
+    <value>プロセスが現在使用している物理メモリの量</value>
   </data>
   <data name="IdleProcessDsb" xml:space="preserve">
-    <value>处理器空闲时间百分比</value>
+    <value>プロセッサーのアイドル時間の割合</value>
   </data>
   <data name="LoadDriverWarn" xml:space="preserve">
-    <value>内核管理功能目前只完成部分，功能还未开发完成，可能存在BUG。如果您加载驱动，很可能造成因为不兼容而蓝屏的问题。
-所以，我们不建议您使用此选项。</value>
+    <value>カーネル管理機能はまだ開発途中であり、バグが存在する可能性があります。ドライバーを読み込むと、非互換性によりブルースクリーンが発生する可能性があります。
+そのため、このオプションの使用は推奨されません。</value>
   </data>
   <data name="LoadDriverWarnTitle" xml:space="preserve">
-    <value>你真的要加载驱动吗？此功能目前仅仅在测试中！</value>
+    <value>本当にドライバーを読み込みますか？この機能は現在テスト段階です！</value>
   </data>
   <data name="WarnTitle" xml:space="preserve">
     <value>警告</value>
   </data>
   <data name="NotConnect" xml:space="preserve">
-    <value>未连接</value>
+    <value>未接続</value>
   </data>
   <data name="DriverNotLoad" xml:space="preserve">
-    <value>驱动没有加载！</value>
+    <value>ドライバーが読み込まれていません！</value>
   </data>
   <data name="SuspendCheckText" xml:space="preserve">
-    <value>就让程序卡死</value>
+    <value>プログラムをフリーズさせる</value>
   </data>
   <data name="SuspendThisText" xml:space="preserve">
-    <value>暂停本程序运行会导致程序卡死，无法继续运行，是否继续？</value>
+    <value>このプログラムを一時停止するとフリーズし、実行を継続できなくなります。続行しますか？</value>
   </data>
   <data name="SuspendThisTitle" xml:space="preserve">
-    <value>你希望暂停本程序的运行吗？</value>
+    <value>このプログラムを一時停止しますか？</value>
   </data>
   <data name="HideMain" xml:space="preserve">
-    <value>隐藏主界面</value>
+    <value>メインウィンドウを隠す</value>
   </data>
   <data name="ShowMain" xml:space="preserve">
-    <value>显示主界面</value>
+    <value>メインウィンドウを表示</value>
   </data>
   <data name="MemTipUsingS" xml:space="preserve">
     <value>使用中 ({0})
-由进程、驱动程序或操作系统使用的内存</value>
+プロセス、ドライバー、またはオペレーティングシステムによって使用されているメモリ</value>
   </data>
   <data name="DetachDebuggerError" xml:space="preserve">
-    <value>无法分离调试器</value>
+    <value>デバッガーを切り離せません</value>
   </data>
   <data name="DetachDebuggerNotDebugger" xml:space="preserve">
-    <value>此进程没有被调试</value>
+    <value>このプロセスはデバッグされていません</value>
   </data>
   <data name="DetachDebuggerTitle" xml:space="preserve">
-    <value>分离调试器</value>
+    <value>デバッガーの切り離し</value>
   </data>
   <data name="ChangePriorityAsk" xml:space="preserve">
-    <value>是否要更改 "%s" 的优先级?</value>
+    <value>"%s" の優先度を変更しますか？</value>
   </data>
   <data name="ChangePriorityContent" xml:space="preserve">
-    <value>更改特定进程的优先级可能导致系统不稳定。</value>
+    <value>特定のプロセスの優先度を変更するとシステムが不安定になる可能性があります。</value>
   </data>
   <data name="SystemInterrupts" xml:space="preserve">
-    <value>系统中断</value>
+    <value>システム割り込み</value>
   </data>
   <data name="InterruptsProcessDsb" xml:space="preserve">
-    <value>延迟过程调用和中断服务例程</value>
+    <value>遅延プロシージャコールと割り込みサービスルーチン</value>
   </data>
   <data name="CreateDumpFailed" xml:space="preserve">
-    <value>创建转储文件失败</value>
+    <value>ダンプファイルの作成に失敗しました</value>
   </data>
   <data name="OpenFileError" xml:space="preserve">
-    <value>打开文件时发生错误</value>
+    <value>ファイルを開く際にエラーが発生しました</value>
   </data>
   <data name="CreateDumpSuccess" xml:space="preserve">
-    <value>已成功创建文件。
+    <value>ファイルを正常に作成しました。
 
-文件位于 :</value>
+ファイルの場所:</value>
   </data>
   <data name="PleaseEnumIn64" xml:space="preserve">
-    <value>请使用 64 位的 PCMgr 枚举64位进程模块</value>
+    <value>64ビットプロセスのモジュールを列挙するには64ビット版のPCMgrを使用してください</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>ドライバーを読み込むには64ビット版のPC Managerを使用してください</value>
   </data>
   <data name="X64EnumDriver" xml:space="preserve">
-    <value>请使用 64 位的 PC Manager 进行加载驱动</value>
+    <value>ドライバーを読み込むには64ビット版のPC Managerを使用してください</value>
   </data>
   <data name="ConnectionType" xml:space="preserve">
-    <value>连接类型</value>
+    <value>接続の種類</value>
   </data>
   <data name="LinkQuality" xml:space="preserve">
-    <value>信号强度</value>
+    <value>電波強度</value>
   </data>
   <data name="TipNetNoAdmin" xml:space="preserve">
-    <value>当前主要网络上的网络利用率
-(需要管理员权限才能正确获取网络速率)</value>
+    <value>現在のメインネットワークのネットワーク使用率
+（ネットワーク速度を正確に取得するには管理者権限が必要です）</value>
   </data>
 </root>

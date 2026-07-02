@@ -62,14 +62,26 @@ namespace PCMgr.WorkWindow
         }
         private void load_settings()
         {
+            if (comboBox_lg.Items.Count == 2)
+                comboBox_lg.Items.Add("日本語");
+
             string setting_lg = GetConfig("Lanuage", "AppSetting");
             switch (setting_lg)
             {
                 case "zh":
+                case "zh-CN":
                     comboBox_lg.SelectedIndex = 0;
                     break;
                 case "en":
+                case "en-US":
                     comboBox_lg.SelectedIndex = 1;
+                    break;
+                case "ja":
+                case "ja-JP":
+                    comboBox_lg.SelectedIndex = 2;
+                    break;
+                default:
+                    comboBox_lg.SelectedIndex = 2;
                     break;
 
             }
@@ -108,6 +120,9 @@ namespace PCMgr.WorkWindow
                     break;
                 case 1:
                     SetConfig("Lanuage", "AppSetting", "en");
+                    break;
+                case 2:
+                    SetConfig("Lanuage", "AppSetting", "ja-JP");
                     break;
 
             }

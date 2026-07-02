@@ -220,6 +220,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LanuageResource_zh.resx</DependentUpon>
     </Compile>
+    <Compile Include="Lanuages\LanuageResource_ja.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LanuageResource_ja.resx</DependentUpon>
+    </Compile>
     <Compile Include="Main\MainNativeBridge.cs" />
     <Compile Include="Main\MainPageUserMgr.cs" />
     <Compile Include="Main\MainPageKernelDrvMgr.cs" />
@@ -521,6 +526,11 @@
       <LastGenOutput>LanuageResource_zh.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Lanuages\LanuageResource_ja.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LanuageResource_ja.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -585,6 +595,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="WorkWindow\PageAboutEn.html" />
+    <None Include="WorkWindow\PageAboutJa.html" />
     <None Include="Resources\pointGray.png" />
     <None Include="Resources\pointGpu.png" />
     <None Include="Resources\pointRam.png" />

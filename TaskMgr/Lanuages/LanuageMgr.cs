@@ -29,21 +29,30 @@ namespace PCMgr.Lanuages
         {
             try
             {
-                CurrentLanuage = lg;
                 switch (lg)
                 {
                     case "zh":
                     case "zh-CN":
                         resLG = new ResourceManager(typeof(LanuageResource_zh));
+                        CurrentLanuage = "zh-CN";
                         IsChinese = true;
                         return true;
                     case "en":
                     case "en-US":
                         resLG = new ResourceManager(typeof(LanuageResource_en));
+                        CurrentLanuage = "en-US";
+                        IsChinese = false;
+                        return true;
+                    case "ja":
+                    case "ja-JP":
+                        resLG = new ResourceManager(typeof(LanuageResource_ja));
+                        CurrentLanuage = "ja-JP";
+                        IsChinese = false;
                         return true;
                     default:
-                        resLG = new ResourceManager("PCMgrLanuage.LanuageResource_" + lg, System.Reflection.Assembly.GetExecutingAssembly());
-                        IsChinese = true;
+                        resLG = new ResourceManager(typeof(LanuageResource_ja));
+                        CurrentLanuage = "ja-JP";
+                        IsChinese = false;
                         return true;
                 }
             }
@@ -51,7 +60,9 @@ namespace PCMgr.Lanuages
             {
                 try
                 {
-                    resLG = new ResourceManager(typeof(LanuageResource_zh));
+                    resLG = new ResourceManager(typeof(LanuageResource_ja));
+                    CurrentLanuage = "ja-JP";
+                    IsChinese = false;
                     return true;
                 }
                 catch
@@ -90,29 +101,28 @@ namespace PCMgr.Lanuages
         public static void InitLanuage()
         {
             string lanuage = GetConfig("Lanuage", "AppSetting");
-            if (lanuage != "")
+            if (string.IsNullOrWhiteSpace(lanuage) || lanuage == "zh" || lanuage == "zh-CN")
             {
-                try
-                {
-                    Log("Loading Lanuage Resource : " + lanuage);
-                    LoadLanuageResource(lanuage);
-                }
-                catch (Exception e)
-                {
-                    LogErr2("Lanuage resource load failed !\n" + e.ToString());
-                    MessageBox.Show(e.ToString(), "ERROR !", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                lanuage = "ja-JP";
+                SetConfig("Lanuage", "AppSetting", lanuage);
+                LogWarn("Not found Lanuage settings or legacy zh setting, use default ja-JP .");
             }
-            else
+            try
             {
-                LoadLanuageResource("zh");
-                SetConfig("Lanuage", "AppSetting", "zh");
-                LogWarn("Not found Lanuage settings , use default zh-CN .");
+                Log("Loading Lanuage Resource : " + lanuage);
+                LoadLanuageResource(lanuage);
+            }
+            catch (Exception e)
+            {
+                LogErr2("Lanuage resource load failed !\n" + e.ToString());
+                MessageBox.Show(e.ToString(), "ERROR !", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             InitLanuageItems();
-            if (lanuage != "" && lanuage != "zh" && lanuage != "zh-CN")
-                System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lanuage);
+            if (string.IsNullOrWhiteSpace(CurrentLanuage))
+                CurrentLanuage = "ja-JP";
+            if (CurrentLanuage != "zh-CN")
+                System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(CurrentLanuage);
         }
         private static void InitLanuageItems()
         {

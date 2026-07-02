@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <title>PageAbout</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Meiryo', 'Yu Gothic UI', sans-serif;
+        }
+        div {
+            position: relative;
+        }
+        .center {
+            text-align:center;
+        }
+        div.block {
+            border-top: 1px dashed #808080;
+            margin: 25px;
+            margin-top: 30px;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+            div.block h3 {
+                position: absolute;
+                top: -25px;
+                background-color: #ff6a00;
+                padding: .5rem 2rem;
+                border-radius: 5rem;
+                color: #fff;
+                margin: 0 auto;
+            }
+        .forkme_link {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: 0;
+            z-index: 5;
+        }
+        h2, h3 {
+            margin: 0;
+        }
+        .txt-title {
+            color: #ff6a00;
+            font-size: 29px;
+            margin-top: 25px;
+        }
+        .txt-ver{
+            background-color:#0081de;
+            border-radius: 0.25rem;
+            padding: 5px;
+            font-size: 10px;
+            color: #fff;
+            position: absolute;
+            top: 20px;
+            left: 385px;
+        }
+        .txt-footer-copyright {
+            font-size: 20px;
+            color: #ff6a00;
+        }
+        .img-platform {
+            position: absolute;
+            top: -3px;
+            right: 70px;
+        }
+        .btn-ok {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+        #txt_updates{
+            margin-left: 10px;
+            color: #ff6a00;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://github.com/717021/pcmgr" target="_blank" class="forkme_link">
+        <img src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" />
+    </a>
+    <span id="txt_current_ver" style="display:none">0.0.0.0</span>
+    <div class="center">
+        <h2 class="txt-title"></h2>
+        <img id="txt_title" src="" />
+        <span id="txt_show_ver" class="txt-ver">不明なバージョン</span>
+        <p>Windows のタスク マネージャーを模したソフトウェア</p>
+    </div>
+    <div class="block">
+        <h3>概要</h3>
+        <p>
+            これは Windows 向けのタスク マネージャーです。Windows 10 のタスク マネージャーを模して作られており、
+            そこにいくつかの追加機能を加えています。通常のタスク マネージャーを拡張したもの、と考えてください。
+            まだ未完成の機能も多く残っています。
+        </p>
+        <p>
+            <b>このソフトウェアはオープンソースで、MIT ライセンスです。</b>
+            興味があれば <a href="https://github.com/717021/pcmgr" target="_blank">github</a> からソースを確認できます。
+        </p>
+        <p>
+            <b>免責事項</b>:
+            このソフトウェアを使用すると、システムに予期しない変更が加わり、障害や損失が発生する可能性があります。
+            そのため、既定では危険な操作は許可されません。
+            もし誤操作によって損害が生じても、本ソフトウェアは責任を負いません。ヘルプを確認して使用してください。<br />
+        </p>
+    </div>
+    <div class="block">
+        <h3>更新</h3>
+        <p>基本的には、時間があるときに少しずつ更新していく予定です。Windows が使われなくなる日まで続くかもしれません。</p>
+        <p>このソフトウェアにはオンライン更新機能があります。下のボタンで新しい版を確認できます。</p>
+        <p><button id="btn_check_update" onclick="check_update()">更新を確認</button><span id="txt_updates">ボタンを押して更新を確認してください</span></p>
+    </div>
+    <div class="block">
+        <h3>報告と要望</h3>
+        <p>プロジェクトの <a href="https://github.com/717021/pcmgr" target="_blank">Github リポジトリ</a> から、要望や問題を送れます。</p>
+    </div>
+    <div class="block">
+        <h3>連絡先</h3>
+        <p>
+            <b>作者：</b>Drimfish（YuZeCheng）<br />
+            <b>QQ：</b>1501076885<br />
+            <b>ブログ：</b><a href="https://www.imyzc.com" target="_blank">www.imyzc.com</a><br />
+        </p>
+        <div class="txt-footer-copyright">Copyright © 2019 All rights reserved <img id="img_platform" class="img-platform" /><button class="btn-ok" onclick="window.external.BtnClose()">閉じる</button></div>
+    </div>
+    <script>
+        var update_checked = false;
+        var xhr;
+
+        function check_update() {
+            if (update_checked) {
+                window.external.BtnRunUpdate()
+            } else {
+                xhr = null;
+                if (window.XMLHttpRequest) {
+                    xhr = new XMLHttpRequest();
+                }
+                else if (window.ActiveXObject) {
+                    xhr = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                if (xhr != null) {
+                    xhr.onreadystatechange = check_update_callback;
+                    xhr.open("GET", "https://www.imyzc.com/softs/pcmgr/?checkupdate=" + document.getElementById('txt_current_ver').innerText, true);
+                    xhr.send(null);
+                }
+                else alert("Your browser does not support XMLHTTP.");
+            }
+        }
+        function check_update_callback() {
+            if (xhr.readyState == 4 && (xhr.status == 0 || xhr.status == 200)) {
+                update_checked = true;
+                var b = xhr.responseText;
+                if (b == "newupdate") {
+                    document.getElementById('txt_updates').innerText = '新しい更新があります。ボタンを押して更新を開始してください';
+                    document.getElementById('btn_check_update').innerText = '今すぐ更新';
+                } else if (b == "latest") {
+                    document.getElementById('txt_updates').innerText = 'すでに最新バージョンです';
+                    document.getElementById('btn_check_update').setAttribute('style', 'display:none');
+                } else {
+                    document.getElementById('txt_updates').innerText = '更新エラー ' + b;
+                    document.getElementById('btn_check_update').setAttribute('style', 'display:none');
+                }
+            } else if (xhr.status >= 400) {
+                document.getElementById('txt_updates').innerText = '更新エラー ' + xhr.status;
+                document.getElementById('btn_check_update').setAttribute('style', 'display:none');
+            }
+        }
+    </script>
+</body>
+
+</html>

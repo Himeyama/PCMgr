@@ -43,8 +43,8 @@ namespace PCMgr.WorkWindow
             string strName = Marshal.PtrToStringUni(name);
             ListViewItem li = new ListViewItem(strName);
             li.Tag = strName;
-            if(LanuageMgr.IsChinese)
-            li.SubItems.Add(GetPrivilegeDescripition(strName, out blue));
+            if (LanuageMgr.IsChinese || (LanuageMgr.CurrentLanuage != null && LanuageMgr.CurrentLanuage.StartsWith("ja", StringComparison.OrdinalIgnoreCase)))
+                li.SubItems.Add(GetPrivilegeDescripition(strName, out blue));
             if (blue)
             {
                 li.SubItems[0].ForeColor = Color.Blue;
@@ -58,42 +58,43 @@ namespace PCMgr.WorkWindow
         private string GetPrivilegeDescripition(string s, out bool blue)
         {
             blue = false;
+            bool useJapanese = LanuageMgr.CurrentLanuage != null && LanuageMgr.CurrentLanuage.StartsWith("ja", StringComparison.OrdinalIgnoreCase);
             switch (s)
             {
                 case "SeShutdownPrivilege":
                     blue = true;
-                    return "此程序有关闭计算机的权限";
-                case "SeDebugPrivilege": return "调试程序权限";
-                case "SeAuditPrivilege": return "产生安全审核,允许将条目添加到安全日志.";
-                case "SeRemoteShutdownPrivilege": return "此程序有关闭远程计算机的权限";
+                    return useJapanese ? "このプログラムにはコンピューターを終了する権限があります" : "此程序有关闭计算机的权限";
+                case "SeDebugPrivilege": return useJapanese ? "デバッグ権限" : "调试程序权限";
+                case "SeAuditPrivilege": return useJapanese ? "セキュリティ監査を生成し、項目をセキュリティログに追加できます" : "产生安全审核,允许将条目添加到安全日志.";
+                case "SeRemoteShutdownPrivilege": return useJapanese ? "このプログラムにはリモート コンピューターを終了する権限があります" : "此程序有关闭远程计算机的权限";
                 case "SeIncreaseWorkingSetPrivilege":
                     blue = true;
-                    return "此程序有增加其内存工作集的权限";
+                    return useJapanese ? "このプログラムにはメモリ ワーキング セットを増やす権限があります" : "此程序有增加其内存工作集的权限";
                 case "SeTimeZonePrivilege":
                     blue = true;
-                    return "此程序有设置计算机时区的权限";
-                case "SeCreateSymbolicLinkPrivilege": return "此程序有创建符号链接的权限";
+                    return useJapanese ? "このプログラムにはコンピューターのタイムゾーンを設定する権限があります" : "此程序有设置计算机时区的权限";
+                case "SeCreateSymbolicLinkPrivilege": return useJapanese ? "このプログラムにはシンボリック リンクを作成する権限があります" : "此程序有创建符号链接的权限";
                 case "SeLoadDriverPrivilege":
                     blue = true;
-                    return "此程序有加载驱动的权限";
+                    return useJapanese ? "このプログラムにはドライバーを読み込む権限があります" : "此程序有加载驱动的权限";
                 case "SeBackupPrivilege":
-                    return "程序具有遍历，执行文件，读取文件和文件夹所有信息的权限";
+                    return useJapanese ? "このプログラムには、ファイルやフォルダーを列挙・実行・読み取りし、そのすべての情報を取得する権限があります" : "程序具有遍历，执行文件，读取文件和文件夹所有信息的权限";
                 case "SeCreateTokenPrivilege":
-                    return "允许进程调用 NtCreateToken() 或者是其他的Token-Creating APIs创建一个访问令牌";
+                    return useJapanese ? "プロセスが NtCreateToken() や他のトークン作成 API を呼び出してアクセス トークンを作成できます" : "允许进程调用 NtCreateToken() 或者是其他的Token-Creating APIs创建一个访问令牌";
                 case "SeAssignPrimaryTokenPrivilege":
-                    return "替换进程级记号，允许初始化一个进程,以取代与已启动的子进程相关的默认令牌.";
+                    return useJapanese ? "プロセス レベルのトークンを置き換え、起動済みの子プロセスに関連付けられた既定のトークンを置き換えてプロセスを初期化できます" : "替换进程级记号，允许初始化一个进程,以取代与已启动的子进程相关的默认令牌.";
                 case "SeChangeNotifyPrivilege":
                     blue = true;
-                    return "跳过遍历检查，允许用户来回移动目录，但是不能列出文件夹的内容.";
+                    return useJapanese ? "列挙チェックを省略し、ユーザーがディレクトリを移動できますが、フォルダーの内容は一覧表示できません" : "跳过遍历检查，允许用户来回移动目录，但是不能列出文件夹的内容.";
                 case "SeSystemEnvironmentPrivilege":
                     blue = true;
-                    return "允许程序查看、修改环境变量和SET命令.";
+                    return useJapanese ? "このプログラムには環境変数と SET コマンドを表示・変更する権限があります" : "允许程序查看、修改环境变量和SET命令.";
                 case "SeTakeOwnershipPrivilege":
                     blue = true;
-                    return "允许程序获得文件或对象的所有权,包括 Active Directory 对象,文件和文件夹,打印机,注册表项,进程和线程.";
+                    return useJapanese ? "このプログラムには、Active Directory のオブジェクト、ファイル、フォルダー、プリンター、レジストリ項目、プロセス、スレッドを含むファイルまたはオブジェクトの所有権を取得する権限があります" : "允许程序获得文件或对象的所有权,包括 Active Directory 对象,文件和文件夹,打印机,注册表项,进程和线程.";
                 case "SeTcbPrivilege":
                     blue = true;
-                    return "允许程序以操作系统方式操作，成为操作系统的一部分.";
+                    return useJapanese ? "このプログラムには OS として動作し、OS の一部として扱われる権限があります" : "允许程序以操作系统方式操作，成为操作系统的一部分.";
                 default:
                     break;
             }

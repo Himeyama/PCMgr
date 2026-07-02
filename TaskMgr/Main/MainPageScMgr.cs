@@ -82,7 +82,7 @@ namespace PCMgr.Main
         public string ScGroupNameToFriendlyName(string s)
         {
             string rs = s;
-            if (LanuageMgr.IsChinese)
+            if (LanuageMgr.IsChinese || (LanuageMgr.CurrentLanuage != null && LanuageMgr.CurrentLanuage.StartsWith("ja", StringComparison.OrdinalIgnoreCase)))
             {
                 if (s != null)
                     if (!scGroupFriendlyName.TryGetValue(s, out rs))
