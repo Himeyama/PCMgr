@@ -69,6 +69,15 @@ x86 のため 32bit ランタイムで確認する。`Debug\` を AppBase にし
   全て `Yu Gothic UI` に置換済み（`FormMain`、`FormSettings`、`PerformancePageCpu/Ram/Disk/Net`）。
   ネイティブ側 `TaskMgrCore\TaskMgrCore.rc`（PE ダンプ用ダイアログ）は未対応のまま残っている
   （C# アプリの表示には影響しない）。
+- **メインウィンドウのメニューバー**（「文件(F) / 选项(O) / 系统(S) / 查看(V)」等）は WinForms の
+  MenuStrip ではなく、`TaskMgrCore\TaskMgrCore.rc` のネイティブ Win32 MENU リソース
+  （`IDR_MENUMAIN` 以下 14 個の MENU ブロック、`PCMgr32.dll` にコンパイル済みで埋め込まれている）
+  だった。`.rc` ソース内の全 MENU 文字列を日本語化済み（POPUP のキャプション "TASKMENU" 等は
+  内部識別用で非表示のため未変更）。**ただしこの環境には C++ ビルドツールチェーン
+  （`cl.exe` / `rc.exe` / MSBuild for C++）が無く再ビルドできないため、`Debug\PCMgr32.dll`
+  （2019 年ビルドの同梱バイナリ）自体は中国語のまま**。実際にメニュー表示を日本語化するには、
+  Visual Studio（C++ デスクトップ開発ワークロード）がある環境で `TaskMgrCore.vcxproj` 等を
+  再ビルドし、生成された `PCMgr32.dll`／`PCMgr32.exe` を `Debug\` に置き直す必要がある。
 
 ### 未対応（今後の候補）
 - **サテライト非対応フォーム**（`.en.resx` が無く Designer に中国語直書き）:
